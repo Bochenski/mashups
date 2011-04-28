@@ -1,0 +1,2 @@
+serviceClass: com.gintellect.hellochat.client.GreetingService
+path: 19AB1E3AD6192606917E649171726ECC.gwt.rpc
