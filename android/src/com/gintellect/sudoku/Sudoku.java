@@ -8,6 +8,9 @@ import android.view.View.OnClickListener;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.util.Log;
 
 public class Sudoku extends Activity implements OnClickListener {
     /** Called when the activity is first created. */
@@ -36,7 +39,12 @@ public class Sudoku extends Activity implements OnClickListener {
     	  Intent i = new Intent(this, About.class);
     	  startActivity(i);
     	  break;
-    	//More buttons go here (if any)
+    	case R.id.new_button:
+    	  openNewGameDialog();
+    	  break;
+    	case R.id.exit_button:
+    	  finish();
+    	  break;
     	}
     }
     
@@ -58,4 +66,22 @@ public class Sudoku extends Activity implements OnClickListener {
     	}
     	return false;
     }
+    
+    private static final String TAG = "Sudoku";
+    private void openNewGameDialog(){
+    	new AlertDialog.Builder(this)
+    		.setTitle(R.string.new_game_title)
+    		.setItems(R.array.difficulty, new DialogInterface.OnClickListener()
+    		{
+    			public void onClick(DialogInterface dialoginterface, int i) {
+    				startGame(i);
+    			}
+    		})
+    		.show();
+    }
+    
+	private void startGame(int i){
+		Log.d(TAG, "clicked on " + i);
+		//Start game here...
+	}
 }
