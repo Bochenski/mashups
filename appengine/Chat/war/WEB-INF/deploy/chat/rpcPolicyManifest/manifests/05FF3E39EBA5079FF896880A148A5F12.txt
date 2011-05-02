@@ -1,2 +1,0 @@
-serviceClass: com.gintellect.chat.client.ChatService
-path: 015F7542074A8A82CC3E15D98B1F2CBF.gwt.rpc
