@@ -16,6 +16,15 @@
     <url-pattern>/chat/chat</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>loginService</servlet-name>
+    <servlet-class>com.gintellect.client.server.LoginServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>loginService</servlet-name>
+    <url-pattern>/chat/login</url-pattern>
+  </servlet-mapping>
   
   <!-- Default page to serve -->
   <welcome-file-list>

@@ -1,2 +1,5 @@
 .DS_Store
 android/bin/
+appengine/Chat/war/chat/
+appengine/Chat/war/WEB-INF/deploy/
+appengine/Chat/war/WEB-INF/classes/

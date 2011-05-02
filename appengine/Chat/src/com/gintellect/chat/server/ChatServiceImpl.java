@@ -90,7 +90,9 @@ public class ChatServiceImpl extends RemoteServiceServlet implements ChatService
 	public void postMessage(ChatMessage message) {
 		UserService userService = UserServiceFactory.getUserService();
 		User user = userService.getCurrentUser();
-		
+		if (user == null) {
+			return;
+		}
 		PersistenceManager persister = Persister.getPersistenceManager();
 		try {
 			PChatMessage pmessage = new PChatMessage(user.getNickname(),message.getMessage(),message.getChat());

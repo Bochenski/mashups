@@ -20,6 +20,7 @@ import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.Anchor;
 
 public class Chat implements EntryPoint {
 
@@ -28,10 +29,40 @@ public class Chat implements EntryPoint {
 	private String currentChat;
 	private long lastMessageTime;
 	private TextArea text;
-	private String user = null;
-	
+
+	private LoginInfo loginInfo = null;
+	private VerticalPanel loginPanel = new VerticalPanel();
+	private Label loginLabel = new Label("Please sign in to your Google Account to access the StockWatcher application.");
+	private Anchor signInLink = new Anchor("Sign In");
+	  
 	@Override
 	public void onModuleLoad() {
+	  // Check login status using login service.
+	  LoginServiceAsync loginService = GWT.create(LoginService.class);
+	  loginService.login(GWT.getHostPageBaseURL(), new AsyncCallback<LoginInfo>() {
+	    public void onFailure(Throwable error) {
+	    }
+	    public void onSuccess(LoginInfo result) {
+	    	loginInfo = result;
+	    	if(loginInfo.isLoggedIn()) {
+	    		loadChat();
+	    	} else {
+	    		loadLogin();
+	    	}
+	    }
+	  });
+	}
+
+	private void loadLogin() {
+	  // Assemble login panel.
+	  signInLink.setHref(loginInfo.getLoginUrl());
+	  loginPanel.add(loginLabel);
+	  loginPanel.add(signInLink);
+	  RootPanel.get().add(loginPanel);
+	}
+	  
+	
+	public void loadChat() {
 		final VerticalPanel mainVert = new VerticalPanel();
 		final VerticalPanel topPanel = new VerticalPanel();
 		final HorizontalPanel midPanel = new HorizontalPanel();
@@ -136,7 +167,7 @@ public class Chat implements EntryPoint {
 			
 			//send a chat message to the server
 			private void sendMessageToServer() {
-				ChatMessage chatmsg = new ChatMessage(user, messageBox.getText(), getCurrentChat());
+				ChatMessage chatmsg = new ChatMessage(loginInfo.getNickname(), messageBox.getText(), getCurrentChat());
 				messageBox.setText("");
 				chatService.postMessage(chatmsg, new AsyncCallback<Void>() {
 					public void onFailure(Throwable caught) {
@@ -196,10 +227,7 @@ public class Chat implements EntryPoint {
 		elapsedTimer.scheduleRepeating(500);
 	}
 	
-	public String getUser() {
-		return user;
-	}
-	
+
 	protected String getCurrentChat() {
 		return currentChat;
 	}
