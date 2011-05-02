@@ -1,0 +1,11 @@
+<!-- Indices written at Mon, 2 May 2011 14:49:01 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 355 times in query history -->
+    <datastore-index kind="PChatMessage" ancestor="false" source="auto">
+        <property name="chat" direction="asc"/>
+        <property name="date" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>
