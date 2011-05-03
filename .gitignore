@@ -6,4 +6,10 @@ appengine/Chat/war/WEB-INF/deploy/
 appengine/Chat/war/WEB-INF/classes/
 appengine/Chat/war/WEB-INF/appengine-generated/
 appengine/Chat/.gwt/
+appengine/testingrest/war/testingrest/
+appengine/testingrest/war/WEB-INF/deploy/
+appengine/testinrest/war/WEB-INF/classes/
+appengine/testingrest/war/WEB-INF/appengine-generated/
+appengine/testingrest/.gwt/
+
 
