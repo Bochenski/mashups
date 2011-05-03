@@ -26,6 +26,15 @@
     <url-pattern>/chat/login</url-pattern>
   </servlet-mapping>
   
+  	<servlet>
+		<servlet-name>TestRest</servlet-name>
+		<servlet-class>com.gintellect.chat.server.TestRest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestRest</servlet-name>
+		<url-pattern>/testrest</url-pattern>
+	</servlet-mapping>
+  
   <!-- Default page to serve -->
   <welcome-file-list>
     <welcome-file>Chat.html</welcome-file>

@@ -1,5 +1,9 @@
 .DS_Store
 android/sudoku/bin/
+android/Translate/bin/
 appengine/Chat/war/chat/
 appengine/Chat/war/WEB-INF/deploy/
 appengine/Chat/war/WEB-INF/classes/
+appengine/Chat/war/WEB-INF/appengine-generated/
+appengine/Chat/.gwt/
+

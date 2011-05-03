@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <TableLayout
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:stretchColumns="1"
+  	android:padding="10dip">
+    <TableRow>
+      <TextView android:text="@string/from_text" />
+      <Spinner android:id="@+id/from_language" />
+    </TableRow>
+    <EditText
+      android:id="@+id/original_text"
+      android:hint="@string/original_hint"
+      android:padding="10dip"
+      android:textSize="18sp" />
+    <TableRow>
+      <TextView android:text="@string/to_text" />
+      <Spinner android:id="@+id/to_language" />
+    </TableRow>
+    <TextView
+      android:id="@+id/translated_text"
+      android:padding="10dip"
+      android:textSize="18sp" />
+    <TextView
+      android:text="@string/back_text" />
+    <TextView
+      android:id="@+id/retranslated_text"
+      android:padding="10dip"
+      android:textSize="18sp" /> 
+  </TableLayout>
+</ScrollView>

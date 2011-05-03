@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Translate</string>
+    <string name="from_text">From:</string>
+    <string name="to_text">To:</string>
+    <string name="back_text">And back again:</string>
+    <string name="original_hint">Enter text to translate</string>
+    <string name="empty"></string>
+    <string name="translating">Translating...</string>
+    <string name="translation_error">(Translation error)</string>
+    <string name="translation_interrupted">(Translation interrupted)</string>
+</resources>
