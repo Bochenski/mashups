@@ -1,3 +1,5 @@
+//import java.util._
+
 object HelloScala {
 	
 	def main (args: Array[String]) {
@@ -28,9 +30,37 @@ object HelloScala {
 			print(i + ",")
 		}                                                                                                                                                                                                                                                                                                        
 		println("Scala Rocks!!!")
+		
+		for (input <- Set("test", "hack")) {
+			val comment = commentOnPractice(input)
+			println("input " + input + " comment " + comment.getOrElse("Found no comments"))
+		}
+		
+		val array = Array(2,3,5,1,6,4)
+		val sumtotal = inject(array, 0) { (carryOver, elem) => carryOver + elem}
+		println("Sum of elements in array " + array.toString() + " is " + sumtotal)
+		
+		val max = inject(array, Integer.MIN_VALUE) { (carryOver, elem) => Math.max(carryOver,elem)}
+		println("Max of elemente in array is " + max)
+		
+	
 	}
+	
+	def inject(arr: Array[Int], initial: Int) (operation: (Int, Int) => Int) : Int = {
+		var carryOver = initial
+		arr.foreach(element => carryOver = operation(carryOver, element))
+		carryOver
+	}
+	
 	
 	def getPersonInfo(primaryKey : Int) = {
 		("David", "Bochenski", "David@Bochenski.co.uk")
 	}
+	
+	def commentOnPractice(input: String) = {
+		//rather than returning null
+		if( input == "test") Some("good") else None
+	}
+	
+
 }

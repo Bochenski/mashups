@@ -209,6 +209,7 @@
       	</configuration>
       </plugin>
     </plugins>
+    <outputDirectory>war/WEB-INF/classes</outputDirectory>
   </build>
   <reporting>
     <plugins>

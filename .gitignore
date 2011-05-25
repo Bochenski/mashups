@@ -12,5 +12,6 @@ appengine/testinrest/war/WEB-INF/classes/
 appengine/testingrest/war/WEB-INF/appengine-generated/
 appengine/testingrest/.gwt/
 scala/.metadata/
+scala/HelloScala/bin/
 
 
