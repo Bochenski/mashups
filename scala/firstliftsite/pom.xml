@@ -20,6 +20,7 @@
     <maven.scaladoc.vscaladocVersion>1.2-m1</maven.scaladoc.vscaladocVersion>
     <vscaladoc.links.liftweb.pathsufix>scaladocs/</vscaladoc.links.liftweb.pathsufix>
     <vscaladoc.links.liftweb.baseurl>http://scala-tools.org/mvnsites/liftweb</vscaladoc.links.liftweb.baseurl>
+    <gae.version>1.5.0.1</gae.version>
   </properties>
 
   <repositories>
@@ -188,6 +189,24 @@
             <classpathContainer>org.eclipse.jdt.launching.JRE_CONTAINER</classpathContainer>
           </classpathContainers>
         </configuration>
+      </plugin>
+      <plugin>
+      	<groupId>org.apache.maven.plugins</groupId>
+      	<artifactId>maven-war-plugin</artifactId>
+      	<version>2.1.1</version>
+      	<configuration>
+      		<webappDirectory>war</webappDirectory>
+      	</configuration>
+      </plugin>
+      <plugin>
+      	<groupId>net.kindleit</groupId>
+      	<artifactId>maven-gae-plugin</artifactId>
+      	<version>0.8.4</version>
+      	<configuration>
+      		<serverId>appengine.google.com</serverId>
+      		<sdkDir>${appengine.sdk.root}</sdkDir>
+      		<appDir>${basedir}/war</appDir>
+      	</configuration>
       </plugin>
     </plugins>
   </build>
