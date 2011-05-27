@@ -7,7 +7,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.gintellect</groupId>
   <artifactId>stocksystem</artifactId>
-  <version>0.2</version>
+  <version>0.4</version>
   <packaging>war</packaging>
   <name>stocksystem Project</name>
   <inceptionYear>2010</inceptionYear>
@@ -86,6 +86,11 @@
       <version>${scala.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+		<groupId>net.liftweb</groupId>
+		<artifactId>lift-mongodb-record_2.8.1</artifactId>
+		<version>2.3</version>
+	</dependency>
   </dependencies>
 
   <build>
@@ -148,7 +153,7 @@
           <scanIntervalSeconds>5</scanIntervalSeconds>
           <connectors>
   <connector implementation="org.mortbay.jetty.nio.SelectChannelConnector">
-    <port>80</port>
+    <port>8080</port>
     <maxIdleTime>60000</maxIdleTime>
   </connector>
 </connectors>
