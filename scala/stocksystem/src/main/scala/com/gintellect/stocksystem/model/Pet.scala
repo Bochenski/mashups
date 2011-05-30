@@ -1,17 +1,17 @@
 package com.gintellect.stocksystem.model
 
-import scala.List
-import net.liftweb.util.FieldError
+//import scala.List
+//import net.liftweb.util.FieldError
 import net.liftweb.record.field._
-import net.liftweb.common._
-import net.liftweb.json.JsonAST._
-import com.mongodb._
-import com.mongodb.util.JSON
-import org.bson.types.ObjectId
+//import net.liftweb.common._
+//import net.liftweb.json.JsonAST._
+//import com.mongodb._
+//import com.mongodb.util.JSON
+//import org.bson.types.ObjectId
 import net.liftweb.mongodb.record._
-import net.liftweb.mongodb.record.field._
-import net.liftweb.mongodb._
-import net.liftweb.json.JsonDSL._
+//import net.liftweb.mongodb.record.field._
+//import net.liftweb.mongodb._
+//import net.liftweb.json.JsonDSL._
  
 class Pet extends MongoRecord[Pet] with MongoId[Pet] {
   def meta = Pet
