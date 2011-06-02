@@ -17,6 +17,9 @@ scala/firstliftsite/war/
 scala/firstliftsite/target/
 scala/stocksystem/war/
 scala/stocksystem/target/
+play/myScalaWebapp/tmp/
+play/myScalaWebapp/modules/
+play/stocksystem/tmp/
 
 
 
