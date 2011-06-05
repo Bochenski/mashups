@@ -1,0 +1,9 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<h1>Seasoned CRM</h1>
+Username?
+<form action="@{Application.sayHello()}" method="POST">
+	<input type="text" name="myName" />
+	<input type="submit" name="hello" value="Say hello!" />
+</form>
