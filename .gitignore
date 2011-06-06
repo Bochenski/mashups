@@ -23,6 +23,7 @@ play/stocksystem/tmp/
 play/stocksystem/precompiled
 play/stocksystem/test-result
 play/stocksystem/lib/scala-library-2.8.1.jar
+play/stocksystem/modules/
 *~
 
 
