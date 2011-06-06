@@ -20,6 +20,7 @@ scala/stocksystem/target/
 play/myScalaWebapp/tmp/
 play/myScalaWebapp/modules/
 play/stocksystem/tmp/
+play/stocksystem/precompiled
 
 
 
