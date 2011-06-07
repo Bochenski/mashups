@@ -5,8 +5,9 @@ import play.mvc._
 
 object Login extends Controller {
 
+  import views.Login._
   def index = {
     Logger.info("Login")
-    <h1>Login</h1>
+    html.index()
   }
 }

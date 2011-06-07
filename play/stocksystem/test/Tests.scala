@@ -10,20 +10,36 @@ import com.osinka.mongodb._
 
 import models._
 
+
 class MongoTests extends UnitFlatSpec with ShouldMatchers {
     
     it should "Test mongoDB connection" in {
-      MongoDB.init
+      MongoDB.isValid should equal (true)
     }
     
-    it should "Create user object and save" in {
+    it should "Reset all data in test database" in {
+      MongoDB.reset should equal (true)
+    }
+    
+    it should "Register new user" in {
+      
+      //Count number of users
+      val s = User.getUsers.size
+      Logger.info(s.toString);
+      //Register new user
+//      User.register("newuser"
+      //Is difference in user count 1
+      
       val db = MongoDB.getDB
       val users = db.getCollection("Users") of User
       val user = new User
-      user.name = "Bob"
+      user.username = "Bob"
+      user.password = "secret"
       user.email = "a@b"
       user.isAdmin = true
       users << user
     }
+    
+    
 
 }
