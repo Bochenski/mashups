@@ -24,7 +24,7 @@ object User extends MongoObjectShape[User] {
   override lazy val * = List(username, email, isAdmin, password)
   override def factory(dbo: DBObject) = Some(new User)
   
-  def login(username: String, password: String) = {
+  def validate(username: String, password: String) = {
     //return TRUE if there is a matching username / passwordHASH
     val user = getUser(username)
     user match { 
@@ -35,16 +35,21 @@ object User extends MongoObjectShape[User] {
   
   def create(username: String, password: String) = {
     //check whether the user exists
-    val user = getUser(username)
-    user match {
-      case Some(_) => false
-      case None => {
-        val newUser = new User()
-        newUser.username = username
-        newUser.password = Codec.hexMD5(password)
-        getUsers << newUser
-        true
-      }
+		if ((username == "") || (username == null) || (password == "") || (password == null))
+			 false
+		else
+		{	
+    	val user = getUser(username)
+    	user match {
+      	case Some(_) => false
+      	case None => {
+        	val newUser = new User()
+        	newUser.username = username
+        	newUser.password = Codec.hexMD5(password)
+        	getUsers << newUser
+        	true
+      	}
+			}
     }
   }
 

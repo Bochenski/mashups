@@ -43,9 +43,23 @@ class MongoTests extends UnitFlatSpec with ShouldMatchers {
 			(t - s) should equal (0)
 		}
     
-		it should "work" in
+		it should "not create users without usernames or passwords" in
 		{
-			1 should equal (1)
+			User.create("","secret") should equal (false)
+			User.create("unsecureuser","") should equal (false)
+			User.create(null,"secret") should equal (false)
+			User.create("unsecureuser",null) should equal (false)
+		}
+		
+		it should "validate valid users" in
+		{
+			User.validate("newuser","secret") should equal (true)
+		}
+		
+		it should "not validate invalid users" in
+		{
+			User.validate("newuser","nosecret") should equal (false)
+			User.validate("olduser","secret") should equal (false)
 		}
 
 }
