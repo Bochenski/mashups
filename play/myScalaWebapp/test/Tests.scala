@@ -7,7 +7,7 @@ import org.scalatest.matchers._
 
 class BasicTests extends UnitFlatSpec with ShouldMatchers {
     
-    it should "run this dumb test" in {
+    it should "run this very dumb test" in {
         
         (1 + 1) should be (2)
         
