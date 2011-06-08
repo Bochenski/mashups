@@ -21,23 +21,23 @@ class MongoTests extends UnitFlatSpec with ShouldMatchers {
       MongoDB.reset should equal (true)
     }
     
-    it should "Register new user" in {
+    it should "Create new user" in {
       
       //Count number of users
       val s = User.getUsers.size
 	
-      //Register new user
-      User.register("newuser","secret")
+      //create new user
+      User.create("newuser","secret")
       //Is difference in user count 1
 
 			val t = User.getUsers.size
 			(t - s) should equal (1)
     }
 
-		it should "Not register duplicate users" in 
+		it should "Not create duplicate users" in 
 		{
 			val s = User.getUsers.size
-			User.register("newuser","secret")
+			User.create("newuser","secret")
 			
 			val t = User.getUsers.size
 			(t - s) should equal (0)
@@ -47,6 +47,5 @@ class MongoTests extends UnitFlatSpec with ShouldMatchers {
 		{
 			1 should equal (1)
 		}
-    
 
 }

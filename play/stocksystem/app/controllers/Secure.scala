@@ -9,8 +9,8 @@ trait Secure {
 
   @Before 
   def checkSecurity = {
-    session("email") match {
-      case Some(email) =>  Logger.info("Logged as %s", User.byEmail(email).username) 
+    session("username") match {
+      case Some(username) =>  Logger.info("Logged as %s", User.getUser(username).get.username) 
                             Continue
       case None =>  Logger.info("User not logged in");
                      Action(Login.index)
