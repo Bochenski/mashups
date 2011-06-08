@@ -25,20 +25,23 @@ class MongoTests extends UnitFlatSpec with ShouldMatchers {
       
       //Count number of users
       val s = User.getUsers.size
-      Logger.info(s.toString);
+	
       //Register new user
-//      User.register("newuser"
+      User.register("newuser","secret")
       //Is difference in user count 1
-      
-      val db = MongoDB.getDB
-      val users = db.getCollection("Users") of User
-      val user = new User
-      user.username = "Bob"
-      user.password = "secret"
-      user.email = "a@b"
-      user.isAdmin = true
-      users << user
+
+			val t = User.getUsers.size
+			(t - s) should equal (1)
     }
+
+		it should "Not register duplicate users" in 
+		{
+			val s = User.getUsers.size
+			User.register("newuser","secret")
+			
+			val t = User.getUsers.size
+			(t - s) should equal (0)
+		}
     
     
 

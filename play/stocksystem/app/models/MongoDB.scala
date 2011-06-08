@@ -4,7 +4,7 @@ import play._
 import com.mongodb._
 import com.osinka.mongodb._
 import com.osinka.mongodb.shape._
-
+import scala.collection.JavaConversions._
 class MongoDB() {
 
 	val host = Play.configuration.getProperty("db.host") 
@@ -29,6 +29,16 @@ object MongoDB {
 	def isValid = mongodbInstance.connected
 	def reset = {
 	  val colls = getDB.getCollectionNames()
-	  Logger.info(colls.toString)
+
+		colls.foreach(col => {
+			if (col.startsWith("system."))
+				Logger.info("not dropping collection: " + col)
+			else
+			{
+				Logger.info("dropping collection: " + col)
+				getDB.getCollection(col).drop
+			}
+		})
+		true
 	}
 }
