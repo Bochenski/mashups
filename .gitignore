@@ -26,5 +26,6 @@ play/stocksystem/lib/scala-library-2.8.1.jar
 play/stocksystem/modules/
 play/stocksystem/logs/
 *~
+play/stocksystem/rubbish/
 
 
