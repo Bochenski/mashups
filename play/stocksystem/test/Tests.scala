@@ -43,6 +43,10 @@ class MongoTests extends UnitFlatSpec with ShouldMatchers {
 			(t - s) should equal (0)
 		}
     
+		it should "work" in
+		{
+			1 should equal (1)
+		}
     
 
 }
