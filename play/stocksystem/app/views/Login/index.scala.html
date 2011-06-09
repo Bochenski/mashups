@@ -1,46 +1,20 @@
 @()(implicit flash:play.mvc.Scope.Flash)
-
-@main(title = "Login") {
-<script type="text/javascript">
-function showlayer(layer){
-var myLayer = document.getElementById(layer);
-if(myLayer.style.display=="none" || myLayer.style.display==""){
-myLayer.style.display="block";
-} else {
-myLayer.style.display="none";
-}
-}
-</script>
-<div id="navbar">
-<ul>
-<li>
-<a href="#" onclick="showlayer('login_menu')">
-Login | Register
-</a></li>
-</ul>
-<div id="login_menu" style="display:none;">
-<div id="new-user-col">New User:<br /><br />
-<a href="register.html" class="green-button">Register</a>
-</div>
-
-<div id="signup-user-col">
-Existing User log in below:<br /><br />
-<form action="login.html" method="post">
-<ul>
-<li>
-<label for="email">Email:</label>
-<input type="text" id="email" size="18"/>
-</li>
-<li>
-<label for="psw">Password:</label>
-<input type="text" id="psw" size="18"/>
-</li>
-<button type="submit" class="green-button">Log-in</button>
-</ul>
+@main(title = "Authentication - Login") { 
+<form action="@action(controllers.Login.login)" method="POST">
+	<div class="box450">
+    <fieldset>
+      <legend>Please login</legend>
+      @showflash()
+      <label>Email:</label><input type="text" name="username" /><br />
+      <label>Password:</label><input type="password" name="password" /><br />
+      <input type="submit" value="Login" class="button175"><br />
+      <div>
+        Need an account? 
+        <span style="text-decoration: underline">
+          <a href="@action(controllers.Login.register)">Register</a>
+        </span> 
+      </div> 
+    </fieldset> 
+  </div>
 </form>
-</div>
-
-<div class="spacer"></div>
-
-</div>
-</div>}
+}

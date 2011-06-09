@@ -33,6 +33,16 @@ object User extends MongoObjectShape[User] {
     }
   }
   
+ 	def login(username: String, password: String) = {
+		if (validate(username, password)) {
+			getUser(username)
+		}
+		else
+		{
+			None
+		}
+	}
+	
   def create(username: String, password: String) = {
     //check whether the user exists
 		if ((username == "") || (username == null) || (password == "") || (password == null))
