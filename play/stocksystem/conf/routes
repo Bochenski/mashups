@@ -6,6 +6,8 @@
 GET     /                                       Application.index
 GET	/hello					Application.sayHello
 GET	/admin					Administration.index
+GET /venue					Venue.index
+POST /venue					Venue.addVenue
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

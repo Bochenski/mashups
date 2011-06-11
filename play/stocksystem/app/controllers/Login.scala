@@ -4,6 +4,9 @@ import play._
 import play.mvc._
 import models._
 
+import com.mongodb.casbah.Imports._
+import scala.collection.JavaConverters._
+
 object Login extends Controller {
 
   import views.Login._
@@ -12,8 +15,8 @@ object Login extends Controller {
 
    def login = {
 			User.login(params.get("username"), params.get("password")) match {
-				case Some(user) => Logger.info("User ID %s logged in", user.username)
-												   setSessionUser(user)
+				case Some(user) => Logger.info("User ID %s logged in", user.as[String]("username"))
+												   setSessionUser(user.as[String]("username"))
 													 Action(Administration.index)
 				case None 			=> flash += ("error" -> "Invalid email and/or password")
 									 	 			 Action(index)
@@ -23,14 +26,12 @@ object Login extends Controller {
 	  def register = html.register()
 
 	  def doRegister = {
-			(User.create(params.get("email"),params.get("password"))) match {
-				case true  => val user = User.login(params.get("email"), params.get("password"))
-			   						  setSessionUser(user.get)
-										  Action(Administration.index)
+			(User.create(params.get("email"),params.get("password"),params.get("email"))) match {
+				case true  => Action(login)
 				case false => flash += ("error" -> "Registration failed")
 										  Action(register)
 			}
 	  }
 
-		private def setSessionUser(user: User) = session.put("username", user.username)
+		private def setSessionUser(username: String) = session.put("username", username)
 	}

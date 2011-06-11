@@ -3,11 +3,12 @@
 require:
     - play
     - play -> scala 0.9.1
-    - com.osinka -> mongo-scala-driver 0.8.12-SNAPSHOT
+    - com.mongodb.casbah -> casbah_2.8.1 2.1.2
     
 repositories:
-    - MavenLocal:
-        type: iBiblio
-        root: "file:${user.home}/.m2/repository"
-        contains:
-            - com.osinka -> * 
+  - scalatools:
+     type: iBiblio
+     root: http://scala-tools.org/repo-releases/
+     contains:
+       - com.mongodb.casbah -> *
+       - org.scalaj -> *
