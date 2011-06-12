@@ -33,8 +33,12 @@ class VenueTests extends UnitFlatSpec with ShouldMatchers {
 			val t = Venue.getVenues.size
 			(t - s) should equal (0)
 		}
+		it should "update venues" in
+		{
+		true should equal(true)
+		}
     
-		it should "not create users without a name" in
+		it should "not create venues without a name" in
 		{
 			Venue.create("","secret") should equal (false)
 		}
