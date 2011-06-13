@@ -6,8 +6,16 @@
 GET     /                                       Application.index
 GET	/hello					Application.sayHello
 GET	/admin					Administration.index
-GET /venue					Venue.index
-POST /venue					Venue.addVenue
+
+# Venues
+GET 	/venue					Venue.index
+POST	/venue					Venue.create
+GET	/venue/new				Venue.new
+PUT	/venue/{id}				Venue.update(id)
+DELETE	/venue/{id}				Venue.delete(id)
+GET 	/venue/{id}				Venue.show(id)
+GET 	/venue/{id}/edit			Venue.edit(id)
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

@@ -1,4 +1,4 @@
-@(venues:List[String])(implicit flash:play.mvc.Scope.Flash)
+@(venues:Iterable[java.util.Map[_,_]])(implicit flash:play.mvc.Scope.Flash)
 
 @if(flash.get("error")) {
 	<p style="color:#c00">
@@ -8,7 +8,9 @@
 @main(title = "Home") {
 		<ul>
 		@for(venue <- venues) {
-			<li>@venue</li>
+			<li>@venue.get("name") : @venue.get("description")
+			<input type="button" onclick="location.href='@action(controllers.Venue.edit(venue.get("_id").toString))'" value="edit" />
+			</li>
 		}
 		</ul>
 		<hr>
@@ -21,5 +23,6 @@
 			<br />
 			<input type="submit" value="Add Venue" />
     </form>
+    
     
 }

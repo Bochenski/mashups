@@ -9,8 +9,8 @@ object Venue extends Controller {
     import views.Venue._
 
     def index = {
-			val names = models.Venue.getVenueNames
-		  html.index(names)
+			val venues = models.Venue.getVenues.map{ venue => venue.toMap }
+		  html.index(venues)
 		}
 		
 		def addVenue = {
@@ -18,5 +18,9 @@ object Venue extends Controller {
 			val description = params.get("description")
 			models.Venue.create(venueName,description)
 			Action(index)
+		}
+		
+		def edit(id :String) = {
+		  Logger.info("we made it into update")
 		}
 }
