@@ -9,6 +9,7 @@ GET	/admin					Administration.index
 
 # Venues
 GET 	/venue					Venue.index
+GET	/venue.xml				Venue.index
 POST	/venue					Venue.create
 GET	/venue/new				Venue.new
 PUT	/venue/{id}				Venue.update(id)
