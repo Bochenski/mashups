@@ -31,6 +31,8 @@ public class TranslateTask implements Runnable{
 		String retrans = doTranslate(trans, to, from);  //swapped
 		translate.setRetranslated(retrans);
 	}
+	
+
 	/**Call the Google Translation API to translate a string from one language to another. For more info on the API see:
 	 * * http://code.google.com/apis/ajaxlanguage*/
 	private String doTranslate(String original, String from, String to) {

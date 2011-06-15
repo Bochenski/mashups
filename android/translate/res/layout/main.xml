@@ -30,5 +30,12 @@
       android:id="@+id/retranslated_text"
       android:padding="10dip"
       android:textSize="18sp" /> 
+    <Button
+      android:id="@+id/getvenues_btn"
+      android:text = "Get Venues" />
+     <TextView
+     android:id="@+id/venues_test"
+     android:padding="10dip"
+     android:textSize="18sp" />
   </TableLayout>
 </ScrollView>

@@ -18,10 +18,12 @@ public final class R {
     }
     public static final class id {
         public static final int from_language=0x7f060000;
+        public static final int getvenues_btn=0x7f060005;
         public static final int original_text=0x7f060001;
         public static final int retranslated_text=0x7f060004;
         public static final int to_language=0x7f060002;
         public static final int translated_text=0x7f060003;
+        public static final int venues_test=0x7f060006;
     }
     public static final class layout {
         public static final int main=0x7f030000;

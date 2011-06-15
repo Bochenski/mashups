@@ -26,13 +26,16 @@ public class Translate extends Activity {
 	private EditText origText;
 	private TextView transText;
 	private TextView retransText;
+	private TextView venueText;
 	
 	private TextWatcher textWatcher;
 	private OnItemSelectedListener itemListener;
 	private Handler guiThread;
 	private ExecutorService transThread;
+	private ExecutorService venueThread;
 	private Runnable updateTask;
 	private Future transPending;
+	private Future venuePending;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -108,21 +111,28 @@ public class Translate extends Activity {
 				}
 				else {
 					//Let user know we're doing something
-					transText.setText(R.string.translating);
-					retransText.setText(R.string.translating);
-					//Begin translation now but don't wait for it 
+	//				venueText.setText("Getting Venues");
+	//				retransText.setText(R.string.translating);
+	//				//Begin translation now but don't wait for it 
+	//				try {
+	//					TranslateTask translateTask = new TranslateTask( Translate.this, //reference to activity
+	//							original, //original text
+	//							getLang(fromSpinner), //from language
+	//							getLang(toSpinner) //to language
+	//							);
+	//					transPending = transThread.submit(translateTask);
+	//				}
+	//				catch (RejectedExecutionException e) {
+	//					//Unable to start new task
+	//					transText.setText(R.string.translation_error);
+	//					retransText.setText(R.string.translation_error);
+	//				}
 					try {
-						TranslateTask translateTask = new TranslateTask( Translate.this, //reference to activity
-								original, //original text
-								getLang(fromSpinner), //from language
-								getLang(toSpinner) //to language
-								);
-						transPending = transThread.submit(translateTask);
+						GetVenuesTask venueTask = new GetVenuesTask(Translate.this);
+						venuePending = venueThread.submit(venueTask);
 					}
 					catch (RejectedExecutionException e) {
-						//Unable to start new task
-						transText.setText(R.string.translation_error);
-						retransText.setText(R.string.translation_error);
+						venueText.setText("Error around venue threading");
 					}
 				
 				}
@@ -153,6 +163,10 @@ public class Translate extends Activity {
 	/** Modify text on the screen (called from another thread) */
 	public void setRetranslated(String text) {
 		guiSetText(retransText, text);
+	}
+	
+	public void setVenue(String text) {
+		guiSetText(venueText,text);
 	}
 	
 	/** All changes to the GUI must be done in the GUI thread */

@@ -8,14 +8,14 @@ GET	/hello					Application.sayHello
 GET	/admin					Administration.index
 
 # Venues
-GET 	/venue					Venue.index
-GET	/venue.xml				Venue.index
-POST	/venue					Venue.create
-GET	/venue/new				Venue.new
-PUT	/venue/{id}				Venue.update(id)
-DELETE	/venue/{id}				Venue.delete(id)
-GET 	/venue/{id}				Venue.show(id)
-GET 	/venue/{id}/edit			Venue.edit(id)
+GET 		/venue								Venue.index
+GET			/venue.{<xml>format}	Venue.index
+POST		/venue								Venue.create
+GET			/venue/new						Venue.new
+PUT			/venue/{id}						Venue.update
+DELETE	/venue/{id}						Venue.delete
+GET 		/venue/{id}						Venue.show
+GET 		/venue/{id}/edit			Venue.edit
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
