@@ -25,6 +25,9 @@ object Venue extends Controller {
            </venues>
         Xml(venuexml)
         }
+				case "json" => {		
+					Json(venues.map { venue => venue.toMap })
+				}
         case _ => html.index(venues.map { venue => venue.toMap })
       }
 		}

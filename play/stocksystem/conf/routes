@@ -10,8 +10,9 @@ GET	/admin					Administration.index
 # Venues
 GET 		/venue								Venue.index
 GET			/venue.{<xml>format}	Venue.index
+GET			/venue.{<json>format}	Venue.index
 POST		/venue								Venue.create
-GET			/venue/new						Venue.new
+GET			/venue/new						Venue.form
 PUT			/venue/{id}						Venue.update
 DELETE	/venue/{id}						Venue.delete
 GET 		/venue/{id}						Venue.show

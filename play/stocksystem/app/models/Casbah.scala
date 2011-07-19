@@ -6,7 +6,6 @@ import scala.collection.JavaConverters._
 import play._
 
 class Casbah() {
-
 	val host = Play.configuration.getProperty("db.host") 
 	val port = Play.configuration.getProperty("db.port").toInt
 	val name = Play.configuration.getProperty("db.name")
