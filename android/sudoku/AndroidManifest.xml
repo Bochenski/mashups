@@ -22,5 +22,8 @@
         <activity android:name=".Prefs"
                   android:label="@string/settings_title">android:name
         </activity>
+        <activity android:name=".Game"
+                  android:label="@string/game_title">
+        </activity>
     </application>
 </manifest>
