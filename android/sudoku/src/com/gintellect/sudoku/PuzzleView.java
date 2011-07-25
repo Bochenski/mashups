@@ -11,6 +11,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.util.Log;
 import android.view.animation.AnimationUtils;
+import android.os.Bundle;
+import android.os.Parcelable;
 
 /**
  * Created by IntelliJ IDEA.
@@ -21,6 +23,11 @@ import android.view.animation.AnimationUtils;
  */
 public class PuzzleView extends View {
     private static final String TAG = "Sudoku";
+    private static final String SELX = "SelX";
+    private static final String SELY = "SelY";
+    private static final String VIEW_STATE = "viewState";
+    private static final int ID = 42;
+
     private final Game game;
 
     private float width;
@@ -34,6 +41,7 @@ public class PuzzleView extends View {
         this.game = (Game) context;
         setFocusable(true);
         setFocusableInTouchMode(true);
+        setId(ID);
     }
 
     @Override
@@ -44,6 +52,26 @@ public class PuzzleView extends View {
         Log.d(TAG, "onSizeChanged: width " + width + " , height " + height);
         super.onSizeChanged(w,h,oldw,oldh);
     }
+
+    @Override
+    protected Parcelable onSaveInstanceState() {
+        Parcelable p = super.onSaveInstanceState();
+        Log.d(TAG, "onSaveInstanceState");
+        Bundle bundle = new Bundle();
+        bundle.putInt(SELX,selX);
+        bundle.putInt(SELY,selY);
+        bundle.putParcelable(VIEW_STATE,p);
+        return bundle;
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Parcelable state) {
+        Log.d(TAG,"onRestoreInstanceState");
+        Bundle bundle = (Bundle) state;
+        select(bundle.getInt(SELX), bundle.getInt(SELY));
+        super.onRestoreInstanceState(bundle.getParcelable(VIEW_STATE));
+    }
+
 
     private void getRect(int x, int y, Rect rect) {
         rect.set((int) (x * width), (int) (y * height), (int) (x * width + width), (int) (y* height + height));
@@ -98,19 +126,21 @@ public class PuzzleView extends View {
                 canvas.drawText(this.game.getTileString(i,j), i * width + x, j * height + y, foreground);
             }
         }
-        //Draw the hints ...
-        Paint hint = new Paint();
-        int c[] = { getResources().getColor(R.color.puzzle_hint_0),
-                    getResources().getColor(R.color.puzzle_hint_1),
-                    getResources().getColor(R.color.puzzle_hint_2)};
-        Rect r = new Rect();
-        for (int i = 0; i < 9; i ++) {
-            for (int j = 0; j < 9; j ++) {
-                int movesLeft = 9 - game.getUsedTiles(i,j).length;
-                if (movesLeft < c.length) {
-                    getRect(i,j,r);
-                    hint.setColor(c[movesLeft]);
-                    canvas.drawRect(r,hint);
+        if (Prefs.getHints(getContext())){
+            //Draw the hints ...
+            Paint hint = new Paint();
+            int c[] = { getResources().getColor(R.color.puzzle_hint_0),
+                        getResources().getColor(R.color.puzzle_hint_1),
+                        getResources().getColor(R.color.puzzle_hint_2)};
+            Rect r = new Rect();
+            for (int i = 0; i < 9; i ++) {
+                for (int j = 0; j < 9; j ++) {
+                    int movesLeft = 9 - game.getUsedTiles(i,j).length;
+                    if (movesLeft < c.length) {
+                        getRect(i,j,r);
+                        hint.setColor(c[movesLeft]);
+                        canvas.drawRect(r,hint);
+                    }
                 }
             }
         }

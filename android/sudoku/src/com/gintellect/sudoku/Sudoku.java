@@ -30,11 +30,16 @@ public class Sudoku extends Activity implements OnClickListener {
         
         View exitButton = findViewById(R.id.exit_button);
         exitButton.setOnClickListener(this);
+
+
         
     }
     
     public void onClick(View v){
     	switch (v.getId()){
+        case R.id.continue_button:
+            startGame(Game.DIFFICULTY_CONTINUE);
+            break;
     	case R.id.about_button:
     	  Intent i = new Intent(this, About.class);
     	  startActivity(i);
