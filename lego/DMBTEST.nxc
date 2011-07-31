@@ -1,0 +1,34 @@
+/*
+Tilted Twister, http://tiltedtwister.com
+Hans Andersson 2010-08-15
+
+Wiring:
+1 Color sensor
+2 Ultrasonic sensor
+A Center motor
+B Tilter arm motor
+C Color sensor motor
+*/
+
+void Testing()
+{
+  OnFwd(OUT_B, 80);
+  while(MotorRotationCount(OUT_B)<65);
+  Off(OUT_B);
+  Wait(500);
+  OnFwd(OUT_B, -30);
+  while(MotorRotationCount(OUT_B)>0);
+  Off(OUT_B);
+  Wait(500);
+}
+
+task main()
+{
+  int i = 0;
+  while (i < 10)
+  {
+        Testing();
+        i++;
+  }
+}
+

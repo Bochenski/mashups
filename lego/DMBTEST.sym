@@ -1,0 +1,126 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0main	6	1	0	4	3
+1	__D0Testing	6	1	4	4	10
+2	__signed_stack_001main	6	1	8	4	2
+3	__signed_stack_001Testing	6	1	12	4	4
+4	__Wait_7qG2_ms_7qG2_000_inline_Testing	5	1	16	4	4
+5	__main_7qG2_i_7qG2_000	4	1	20	2	4
+6	__Testing_return	1	1	22	1	3
+7	____initialize_global_data_return	1	1	23	1	3
+8	__constVal63	2	0	24	1	4
+9	__constVal96	2	0	25	1	4
+10	__constValNeg30	2	0	26	1	1
+11	__constVal0	2	1	27	1	14
+12	__constVal1	2	0	28	1	7
+13	__constVal32	2	0	29	1	12
+14	__constVal3	2	0	30	1	4
+15	__zfmain	1	1	31	1	3
+16	__zfTesting	1	1	32	1	6
+17	__PFTmp	1	1	33	1	1
+#SOURCES
+Clump	Line	PC	Source
+0	25	0	#line 25 "/Users/David/Documents/DMBTEST.nxc"
+0	26	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	25	2	#line 25 "/Users/David/Documents/DMBTEST.nxc"
+0	26	2	#line 26 "/Users/David/Documents/DMBTEST.nxc"
+0	27	2		set __main_7qG2_i_7qG2_000, 0
+0	26	5	#line 26 "/Users/David/Documents/DMBTEST.nxc"
+0	26	5	#line 26 "/Users/David/Documents/DMBTEST.nxc"
+0	27	5		mov __signed_stack_001main, __main_7qG2_i_7qG2_000
+0	26	7	#line 26 "/Users/David/Documents/DMBTEST.nxc"
+0	27	7	#line 27 "/Users/David/Documents/DMBTEST.nxc"
+0	28	7		set __D0main, 10
+0	27	10	#line 27 "/Users/David/Documents/DMBTEST.nxc"
+0	28	10		cmp 0, __zfmain, __signed_stack_001main, __D0main
+0	27	14	#line 27 "/Users/David/Documents/DMBTEST.nxc"
+0	28	14		mov __D0main, __zfmain
+0	28	16	#line 28 "/Users/David/Documents/DMBTEST.nxc"
+0	29	16		brtst 4, __NXC_Label_508, __zfmain
+0	29	19	#line 29 "/Users/David/Documents/DMBTEST.nxc"
+0	30	19		subcall Testing, __Testing_return
+0	29	21	#line 29 "/Users/David/Documents/DMBTEST.nxc"
+0	30	21	#line 30 "/Users/David/Documents/DMBTEST.nxc"
+0	31	21		add __main_7qG2_i_7qG2_000, __main_7qG2_i_7qG2_000, __constVal1
+0	30	25	#line 30 "/Users/David/Documents/DMBTEST.nxc"
+0	33	25	#line 33 "/Users/David/Documents/DMBTEST.nxc"
+0	34	25		jmp __NXC_Label_507
+0	33	27	#line 33 "/Users/David/Documents/DMBTEST.nxc"
+0	34	27		exit -1, -1
+1	13	0	#line 13 "/Users/David/Documents/DMBTEST.nxc"
+1	14	0		set __D0Testing, 80
+1	14	3	#line 14 "/Users/David/Documents/DMBTEST.nxc"
+1	15	3	#pragma macro 7
+1	15	3		setout __constVal1, 2, __D0Testing, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	3565	26	#line 3565 "/Users/David/Documents/DMBTEST.nxc"
+1	14	26	#line 14 "/Users/David/Documents/DMBTEST.nxc"
+1	14	26	#line 14 "/Users/David/Documents/DMBTEST.nxc"
+1	15	26		getout __signed_stack_001Testing, __constVal1, 14
+1	14	30	#line 14 "/Users/David/Documents/DMBTEST.nxc"
+1	14	30	#line 14 "/Users/David/Documents/DMBTEST.nxc"
+1	15	30		set __D0Testing, 65
+1	14	33	#line 14 "/Users/David/Documents/DMBTEST.nxc"
+1	15	33		cmp 0, __zfTesting, __signed_stack_001Testing, __D0Testing
+1	14	37	#line 14 "/Users/David/Documents/DMBTEST.nxc"
+1	15	37		mov __D0Testing, __zfTesting
+1	15	39	#line 15 "/Users/David/Documents/DMBTEST.nxc"
+1	16	39		brtst 4, __NXC_Label_492, __zfTesting
+1	15	42	#line 15 "/Users/David/Documents/DMBTEST.nxc"
+1	15	42	#line 15 "/Users/David/Documents/DMBTEST.nxc"
+1	16	42		jmp __NXC_Label_491
+1	15	44	#line 15 "/Users/David/Documents/DMBTEST.nxc"
+1	16	44	#line 16 "/Users/David/Documents/DMBTEST.nxc"
+1	17	44	#pragma macro 7
+1	17	44		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	3588	67	#line 3588 "/Users/David/Documents/DMBTEST.nxc"
+1	16	67	#line 16 "/Users/David/Documents/DMBTEST.nxc"
+1	16	67	#line 16 "/Users/David/Documents/DMBTEST.nxc"
+1	17	67		set __Wait_7qG2_ms_7qG2_000_inline_Testing, 500
+1	16	70	#line 16 "/Users/David/Documents/DMBTEST.nxc"
+1	7956	70	#line 7956 "NXCDefs.h"
+1	7957	70		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_Testing
+1	7957	73	#line 7957 "NXCDefs.h"
+1	17	73	#line 17 "/Users/David/Documents/DMBTEST.nxc"
+1	17	73	#line 17 "/Users/David/Documents/DMBTEST.nxc"
+1	18	73		mov __D0Testing, __constValNeg30
+1	18	75	#line 18 "/Users/David/Documents/DMBTEST.nxc"
+1	19	75	#pragma macro 7
+1	19	75		setout __constVal1, 2, __D0Testing, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	3609	98	#line 3609 "/Users/David/Documents/DMBTEST.nxc"
+1	18	98	#line 18 "/Users/David/Documents/DMBTEST.nxc"
+1	18	98	#line 18 "/Users/David/Documents/DMBTEST.nxc"
+1	19	98		getout __signed_stack_001Testing, __constVal1, 14
+1	18	102	#line 18 "/Users/David/Documents/DMBTEST.nxc"
+1	18	102	#line 18 "/Users/David/Documents/DMBTEST.nxc"
+1	19	102		set __D0Testing, 0
+1	18	105	#line 18 "/Users/David/Documents/DMBTEST.nxc"
+1	19	105		cmp 1, __zfTesting, __signed_stack_001Testing, __D0Testing
+1	18	109	#line 18 "/Users/David/Documents/DMBTEST.nxc"
+1	19	109		mov __D0Testing, __zfTesting
+1	19	111	#line 19 "/Users/David/Documents/DMBTEST.nxc"
+1	20	111		brtst 4, __NXC_Label_500, __zfTesting
+1	19	114	#line 19 "/Users/David/Documents/DMBTEST.nxc"
+1	19	114	#line 19 "/Users/David/Documents/DMBTEST.nxc"
+1	20	114		jmp __NXC_Label_499
+1	19	116	#line 19 "/Users/David/Documents/DMBTEST.nxc"
+1	20	116	#line 20 "/Users/David/Documents/DMBTEST.nxc"
+1	21	116	#pragma macro 7
+1	21	116		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+1	3632	139	#line 3632 "/Users/David/Documents/DMBTEST.nxc"
+1	20	139	#line 20 "/Users/David/Documents/DMBTEST.nxc"
+1	20	139	#line 20 "/Users/David/Documents/DMBTEST.nxc"
+1	21	139		set __Wait_7qG2_ms_7qG2_000_inline_Testing, 500
+1	20	142	#line 20 "/Users/David/Documents/DMBTEST.nxc"
+1	7956	142	#line 7956 "NXCDefs.h"
+1	7957	142		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_Testing
+1	7957	145	#line 7957 "NXCDefs.h"
+1	21	145	#line 21 "/Users/David/Documents/DMBTEST.nxc"
+1	23	145	#line 23 "/Users/David/Documents/DMBTEST.nxc"
+1	24	145		subret __Testing_return
+2	34	0	#line 34 "/Users/David/Documents/DMBTEST.nxc"
+2	35	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	/Users/David/Documents/DMBTEST.nxc
+1	Testing	30	/Users/David/Documents/DMBTEST.nxc
+2	__initialize_global_data	177	/Users/David/Documents/DMBTEST.nxc
