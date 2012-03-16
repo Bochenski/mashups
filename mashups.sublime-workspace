@@ -1,0 +1,220 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"create",
+				"createLinkToCategoryMember"
+			],
+			[
+				"day",
+				"dayCourseCategoryMemberIdString"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"discover",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 122.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/david/scm/stocksystem/play/app/controllers/Visible.scala",
+		"/Users/david/scm/stocksystem/play/app/views/DayCourseDate/edit.scala.html",
+		"/Users/david/scm/stocksystem/play/app/controllers/DayCourseDate.scala",
+		"/Users/david/scm/stocksystem/play/app/views/DayCourseDate/form.scala.html",
+		"/Users/david/scm/stocksystem/play/app/controllers/DayCourse.scala",
+		"/Users/david/scm/stocksystem/play/public/stylesheets/seasoned.css",
+		"/Users/david/scm/stocksystem/play/app/views/Tags/addToGoogleCart.scala.html",
+		"/Users/david/scm/stocksystem/play/app/models/OrderLine.scala",
+		"/Users/david/scm/stocksystem/play/app/views/main.scala.html",
+		"/Users/david/scm/stocksystem/play/app/models/CategoryMember.scala",
+		"/Users/david/scm/stocksystem/play/app/models/Course.scala",
+		"/Users/david/scm/stocksystem/play/app/models/Product.scala",
+		"/Users/david/scm/stocksystem/play/app/models/ProductType.scala",
+		"/Users/david/scm/stocksystem/play/app/models/ProductVarient.scala",
+		"/Users/david/scm/stocksystem/play/app/models/Version.scala",
+		"/Users/david/scm/stocksystem/play/app/views/DayCourse/index.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Tags/categorymemberlist.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Tags/courseDates.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Tags/productlist.scala.html",
+		"/Users/david/scm/stocksystem/play/app/models/Category.scala",
+		"/Users/david/scm/stocksystem/play/app/views/Product/show.scala.html",
+		"/Users/david/scm/stocksystem/play/app/controllers/Location.scala",
+		"/Users/david/scm/stocksystem/play/app/controllers/Category.scala",
+		"/Users/david/scm/stocksystem/play/app/controllers/CategoryMember.scala",
+		"/Users/david/scm/stocksystem/play/app/controllers/Product.scala",
+		"/Users/david/scm/stocksystem/play/app/views/DayCourse/edit.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/DayCourse/form.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Product/form.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Product/index.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Category/show.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/CategoryMember/show.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Store/index.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/CategoryMember/index.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Category/index.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/DayCourse/show.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/CategoryMember/edit.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Location/index.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Location/show.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Product/edit.scala.html",
+		"/Users/david/scm/stocksystem/play/app/models/Visible.scala",
+		"/Users/david/scm/stocksystem/play/app/controllers/Images.scala",
+		"/Users/david/scm/stocksystem/play/app/controllers/ProductVarient.scala",
+		"/Users/david/scm/stocksystem/play/app/controllers/ReadOnly.scala",
+		"/Users/david/scm/stocksystem/play/app/controllers/FileManager.scala",
+		"/Users/david/scm/stocksystem/play/app/models/FileManager.scala",
+		"/Users/david/scm/stocksystem/play/app/views/Tags/fileupload.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/ProductVarient/form.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Tags/productphotos.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/ProductVarient/edit.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/Tags/removeImages.scala.html",
+		"/Users/david/scm/stocksystem/play/conf/routes",
+		"/Users/david/scm/stocksystem/play/app/views/ProductVarient/index.scala.html",
+		"/Users/david/scm/stocksystem/play/app/views/CategoryMember/form.scala.html",
+		"/Users/david/scm/stocksystem/play/app/models/Location.scala",
+		"/Users/david/scm/stocksystem/play/app/models/Page.scala",
+		"/Users/david/scm/stocksystem/play/app/views/Tags/coursetypelist.scala.html",
+		"/Users/david/scm/stocksystem/play/app/models/DBBase.scala",
+		"/Users/david/scm/stocksystem/play/app/controllers/Facebook.scala",
+		"/Users/david/scm/stocksystem/.gitignore",
+		"/Users/david/scm/stocksystem/play/conf/dependencies.yml",
+		"/Users/david/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings",
+		"/Users/david/Library/Application Support/Sublime Text 2/Packages/User/scala.sublime-build"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"coursetypelist",
+			"views.Tags.html.categorymemberlist(",
+			"filter(",
+			"toBoolean",
+			"hidden",
+			"fileupload(\"p",
+			"fileupload(\"",
+			"@(",
+			"createurlPath"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 278.0,
+	"status_bar_visible": true
+}
