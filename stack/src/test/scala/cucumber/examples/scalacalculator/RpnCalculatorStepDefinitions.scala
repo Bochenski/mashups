@@ -13,6 +13,12 @@ class RpnCalculatorStepDefinitions extends ScalaDsl with EN {
     calc push "+"
   }
 
+  When("""^I subtract (\d+) from (\d+)$"""){(arg1: Double, arg2: Double) =>
+    calc push arg1
+    calc push arg2
+    calc push "-"
+  } 
+
   Then("^the result is (\\d+)$") { expected: Double =>
     assertEquals(expected, calc.value)
   }
