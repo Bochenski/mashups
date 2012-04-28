@@ -4,97 +4,31 @@
 		"selected_items":
 		[
 			[
-<<<<<<< HEAD
 				"edi",
 				"editProductAction"
-=======
-				"AX",
-				"AX_surname"
-			],
-			[
-				"A",
-				"AX_email"
-			],
-			[
-				"Auth",
-				"AuthenticatedAdmin"
-			],
-			[
-				"add",
-				"address_2"
-			],
-			[
-				"create",
-				"createLinkToCategoryMember"
-			],
-			[
-				"day",
-				"dayCourseCategoryMemberIdString"
->>>>>>> sublime project files
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-<<<<<<< HEAD
-			"file": "/Users/david/scm/mashups/stack/build.sbt",
+			"file": "/Users/David/scm/stack/test/resources/fundamental.feature",
 			"settings":
 			{
-				"buffer_size": 424,
-=======
-			"file": "/Users/david/scm/stocksystem/play/app/controllers/Location.scala",
-			"settings":
-			{
-				"buffer_size": 2199,
+				"buffer_size": 656,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/david/scm/stocksystem/play/app/controllers/CategoryMember.scala",
+			"file": "/Users/David/scm/stack/test/scala/fundamentalStepDefinitions.scala",
 			"settings":
 			{
-				"buffer_size": 4171,
->>>>>>> sublime project files
-				"line_ending": "Unix"
-			}
-		},
-		{
-<<<<<<< HEAD
-			"file": "/Users/david/scm/mashups/stack/src/test/scala/cucumber/examples/scalacalculator/RunCukesTest.scala",
-			"settings":
-			{
-				"buffer_size": 189,
-=======
-			"file": "/Users/david/scm/stocksystem/play/app/controllers/Category.scala",
-			"settings":
-			{
-				"buffer_size": 2800,
->>>>>>> sublime project files
-				"line_ending": "Unix"
-			}
-		},
-		{
-<<<<<<< HEAD
-			"file": "/Users/david/scm/mashups/stack/src/test/resources/cucumber/examples/scalacalculator/basic_arithmetic.feature",
-			"settings":
-			{
-				"buffer_size": 163,
-=======
-			"file": "stack/build.sbt",
-			"settings":
-			{
-				"buffer_size": 424,
->>>>>>> sublime project files
+				"buffer_size": 1034,
 				"line_ending": "Unix"
 			}
 		}
 	],
-<<<<<<< HEAD
 	"build_system": "Packages/User/sbt.sublime-build",
-=======
-	"build_system": "Packages/User/scala.sublime-build",
->>>>>>> sublime project files
 	"command_palette":
 	{
 		"height": 246.0,
@@ -202,37 +136,80 @@
 	},
 	"file_history":
 	[
-<<<<<<< HEAD
-		"/Users/David/scm/stocksystem/play/app/models/Group.scala",
-		"/Users/David/scm/stocksystem/play/app/views/Tags/removeImages.scala.html",
-		"/Users/David/scm/stocksystem/play/app/controllers/FileManager.scala",
-		"/Users/David/scm/stocksystem/play/app/controllers/Location.scala",
+		"/Users/David/scm/stack/.gitignore",
+		"/Users/David/scm/mashups/play/v2template/app/models/Global.scala",
+		"/Users/David/scm/mashups/stack/test/scala/fundamentalStepDefinitions.scala",
+		"/Users/David/scm/mashups/stack/conf/routes",
+		"/Users/David/scm/mashups/stack/app/controllers/Problem.scala",
+		"/Users/David/scm/stocksystem/.gitignore",
+		"/Users/David/scm/stocksystem/play/conf/routes",
+		"/Users/David/scm/stocksystem/play/project/Build.scala",
+		"/Users/David/scm/stocksystem/play/app/controllers/ApplicationSetting.scala",
 		"/Users/David/scm/stocksystem/play/app/models/DBBase.scala",
+		"/Users/David/scm/stocksystem/play/app/models/ApplicationSetting.scala",
+		"/Users/David/scm/stocksystem/play/app/models/Version.scala",
+		"/Users/David/scm/stocksystem/play/app/controllers/Facebook.scala",
+		"/Users/David/scm/stocksystem/play/app/models/User.scala",
+		"/Users/David/scm/stocksystem/play/app/controllers/OpenID.scala",
+		"/Users/David/scm/stocksystem/play/app/controllers/UserRole.scala",
+		"/Users/David/scm/stocksystem/play/project/plugins.sbt",
+		"/Users/David/scm/stocksystem/play/app/controllers/User.scala",
+		"/Users/David/scm/stocksystem/play/app/controllers/ProductVarient.scala",
+		"/Users/David/scm/stocksystem/play/app/controllers/Authentication.scala",
+		"/Users/David/scm/stocksystem/play/app/views/Login/form.scala.html",
+		"/Users/David/scm/stocksystem/play/app/controllers/Product.scala",
+		"/Users/David/scm/stocksystem/play/app/controllers/DayCourse.scala",
+		"/Users/David/scm/stocksystem/play/app/views/ProductVarient/edit.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Product/edit.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/DayCourse/edit.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Product/index.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Product/show.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Tags/productphotos.scala.html",
+		"/Users/David/scm/stocksystem/play/app/models/FileManager.scala",
+		"/Users/David/scm/stocksystem/play/app/models/ProductType.scala",
+		"/Users/David/scm/stocksystem_master/play/app/views/Tags/productphotos.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/ProductVarient/show.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Category/index.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Category/show.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/CategoryMember/show.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Location/show.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Tags/removeImages.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Tags/coursetypelist.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Tags/productlist.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Tags/categorymemberlist.scala.html",
+		"/Users/David/scm/stocksystem/play/app/models/FileInfo.scala",
+		"/Users/David/scm/stocksystem_master/play/app/models/MongoDB.scala",
+		"/Users/David/scm/stocksystem/play/app/models/MongoDB.scala",
+		"/Users/David/scm/stocksystem_master/play/app/controllers/FileManager.scala",
+		"/Users/David/scm/stocksystem_master/play/app/controllers/Category.scala",
+		"/Users/David/scm/stocksystem_master/play/app/models/FileManager.scala",
+		"/Users/David/scm/stocksystem_master/play/app/models/Version.scala",
+		"/Users/David/scm/stocksystem_master/play/app/models/FileInfo.scala",
+		"/Users/David/scm/stocksystem/play/app/controllers/Category.scala",
+		"/Users/David/scm/stocksystem/play/app/views/Tags/courseDates.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/Tags/fileupload.scala.html",
+		"/Users/David/scm/stocksystem/play/app/controllers/FileManager.scala",
+		"/Users/David/scm/stocksystem/play/app/controllers/Application.scala",
+		"/Users/David/scm/stocksystem/play/test/first.scala",
+		"/Users/David/scm/stocksystem/play/app/controllers/Store.scala",
+		"/Users/David/scm/stocksystem/play/app/views/DayCourse/show.scala.html",
+		"/Users/David/scm/stocksystem/play/app/views/DayCourse/index.scala.html",
+		"/Users/David/scm/stocksystem/play/app/controllers/Location.scala",
+		"/Users/David/scm/stocksystem/play/conf/application.conf",
+		"/Users/David/scm/stocksystem/play/app/models/Utilities.scala",
+		"/Users/David/scm/stocksystem/play/app/models/CategoryMember.scala",
+		"/Users/David/scm/stocksystem/play/app/models/Product.scala",
+		"/Users/David/scm/stocksystem/play/app/models/ProductVarient.scala",
+		"/Users/David/scm/stocksystem/play/app/models/Group.scala",
 		"/Users/David/scm/stocksystem/play/app/views/DayCourseDate/show.scala.html",
 		"/Users/David/scm/stocksystem/play/app/controllers/DayCourseDate.scala",
-		"/Users/David/scm/stocksystem/play/app/controllers/OpenID.scala",
-		"/Users/David/scm/stocksystem/play/app/views/Location/show.scala.html",
-		"/Users/David/scm/stocksystem/play/app/controllers/Facebook.scala",
 		"/Users/David/scm/stocksystem/play/app/controllers/PageInfo.scala",
 		"/Users/David/scm/stocksystem/play/app/controllers/PageAlias.scala",
 		"/Users/David/scm/stocksystem/play/app/controllers/Page.scala",
-		"/Users/David/scm/stocksystem/play/app/controllers/Application.scala",
-		"/Users/David/scm/stocksystem/play/app/controllers/Authentication.scala",
-		"/Users/David/scm/stocksystem/play/app/models/ProductType.scala",
-		"/Users/David/scm/stocksystem/play/app/models/FileManager.scala",
 		"/Users/David/scm/stocksystem/play/app/models/Course.scala",
-		"/Users/David/scm/stocksystem/play/app/models/CategoryMember.scala",
-		"/Users/David/scm/stocksystem/play/app/models/Product.scala",
 		"/Users/David/scm/stocksystem/play/app/models/Location.scala",
 		"/Users/David/scm/stocksystem/play/app/controllers/CategoryMember.scala",
-		"/Users/David/scm/stocksystem/play/app/views/DayCourse/edit.scala.html",
-		"/Users/David/scm/stocksystem/play/app/controllers/ProductVarient.scala",
-		"/Users/David/scm/stocksystem/play/app/controllers/Product.scala",
-		"/Users/David/scm/stocksystem/play/app/controllers/DayCourse.scala",
-		"/Users/David/scm/stocksystem/play/app/views/DayCourse/index.scala.html",
-		"/Users/David/scm/stocksystem/play/app/views/DayCourse/show.scala.html",
 		"/Users/David/Documents/scm/stocksystem/play/conf/routes",
-		"/Users/David/scm/stocksystem/play/app/views/Tags/courseDates.scala.html",
 		"/Users/David/Documents/scm/stocksystem/play/app/views/Tags/courseDates.scala.html",
 		"/Users/David/Documents/scm/stocksystem/play/app/views/DayCourse/show.scala.html",
 		"/Users/David/Documents/scm/stocksystem/play/app/controllers/DayCourse.scala",
@@ -286,174 +263,7 @@
 		"/Users/David/Documents/scm/stocksystem/play/app/views/CategoryMember/index.scala.html",
 		"/Users/David/Documents/scm/stocksystem/play/app/views/ProductVarient/index.scala.html",
 		"/Users/David/Documents/scm/stocksystem/play/app/views/Category/index.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Tags/productphotos.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/controllers/CreateOnly.scala",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Tags/categoryshow.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Tags/productindex.scala.html",
-		"/Users/David/Dropbox/360/Presales Shared Dropbox/Demo Data/ARP/ARP Project Planning.xml",
-		"/Users/David/Dropbox/360/Presales Shared Dropbox/Demo Data/ARP/ARP Shift Planning.xml",
-		"/Users/David/Dropbox/360/Presales Shared Dropbox/Demo Data/ARP/ARP Rota Planning.xml",
-		"/Users/David/Documents/scm/smoky/mws/play/app/controllers/User.scala",
-		"/Users/David/Documents/scm/smoky/mws/play/app/controllers/ApplicationSetting.scala",
-		"/Users/David/Documents/scm/smoky/mws/play/app/models/ApplicationSetting.scala",
-		"/Users/David/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings",
-		"/Users/David/Library/Application Support/Sublime Text 2/Packages/User/sbt.sublime-build",
-		"/D/Development/Source/Smoky/scala/ssi/src/main/scala/threesixty/presales/ssi/Main.scala",
-		"/C/Users/Daryl Dudey/AppData/Roaming/Sublime Text 2/Packages/User/SBT.sublime-build",
-		"/D/Development/Source/Smoky/scala/project/Build.scala",
-		"/D/Development/Source/Smoky/Smoky.sublime-project",
-		"/D/Development/Source/Smoky/scala/build.sbt",
-		"/D/Development/Source/Smoky/scala/datagen/build.sbt",
-		"/D/Development/Source/Smoky/scala/schema/build.sbt",
-		"/D/Development/Source/Smoky/scala/simulator/build.sbt",
-		"/D/Development/Source/Smoky/scala/datagen/src/main/scala/threesixty/presales/datagenerator/DataGenerator.scala~",
-		"/D/Development/Source/Smoky/scala/shard/src/main/scala/threesixty/presales/shard/GSH.scala",
-		"/C/Users/Daryl Dudey/AppData/Roaming/Sublime Text 2/Packages/Default/Distraction Free.sublime-settings",
-		"/C/Users/Daryl Dudey/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
-		"/C/Users/Daryl Dudey/AppData/Roaming/Sublime Text 2/Packages/Default/Base File.sublime-settings",
-		"/D/Development/Source/Smoky/mws/play/app/controllers/JobsList.scala",
-		"/D/Development/Source/Smoky/mws/play/app/controllers/Plan.scala",
-		"/D/Development/Source/Smoky/mws/play/app/controllers/Login.scala",
-		"/D/Development/Source/Smoky/clojure/cuckoo/project.clj",
-		"/D/Development/Source/Smoky/clojure/cuckoo/src/cuckoo/log.clj",
-		"/D/Development/Source/Smoky/clojure/cuckoo/src/cuckoo/scheduler/scheduler.clj",
-		"/C/Users/Daryl Dudey/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
-		"/C/Users/Daryl Dudey/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
-		"/C/Users/Daryl Dudey/AppData/Roaming/Sublime Text 2/Packages/Default/Global.sublime-settings",
-		"/D/Development/Source/Smoky/Smoky.sublime-workspace",
-		"/D/Development/Source/Smoky/clojure/Clojure.sublime-project",
-		"/D/Development/Source/Smoky/mws/play/app/controllers/Bootstrap.scala",
-		"/D/Development/Source/Smoky/mws/play/app/controllers/ApplicationSetting.scala"
-=======
-		"/Users/david/scm/stocksystem/play/conf/routes",
-		"/Users/david/scm/stocksystem/play/app/models/Version.scala",
-		"/Users/david/scm/stocksystem/play/app/models/MongoDB.scala",
-		"/Users/david/scm/stocksystem/play/app/models/Group.scala",
-		"/Users/david/scm/stocksystem/play/app/models/DBInstance.scala",
-		"/Users/david/scm/stocksystem/play/app/models/ApplicationSetting.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/ApplicationSetting.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/UserRole.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/User.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Store.scala",
-		"/Users/david/scm/stocksystem/play/app/views/Store/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/controllers/PageInfo.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/ProductVarient.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Feature.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Role.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Login.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Product.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Page.scala",
-		"/Users/david/scm/stocksystem/play/app/models/Startup.scala",
-		"/Users/david/scm/stocksystem/play/app/models/User.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/OpenID.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Location.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/PageAlias.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Facebook.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Application.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Authentication.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Category.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/CategoryMember.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/DayCourse.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/DayCourseDate.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/FileManager.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Images.scala",
-		"/Users/david/scm/stocksystem/play/app/views/Feature/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/User/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Tags/feature.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/DayCourse/show.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/DayCourse/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/DayCourse/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/DayCourse/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/DayCourseDate/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/DayCourseDate/show.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/DayCourseDate/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Feature/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Feature/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/User/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/User/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/User/show.scala.html",
-		"/Users/david/scm/stocksystem/play/app/models/CategoryMember.scala",
-		"/Users/david/scm/stocksystem/play/app/models/Feature.scala",
-		"/Users/david/scm/stocksystem/play/app/models/FileManager.scala",
-		"/Users/david/scm/stocksystem/play/app/models/OpenID.scala",
-		"/Users/david/scm/stocksystem/play/app/models/Order.scala",
-		"/Users/david/scm/stocksystem/play/app/models/OrderLine.scala",
-		"/Users/david/scm/stocksystem/play/app/models/Page.scala",
-		"/Users/david/scm/stocksystem/play/app/models/Product.scala",
-		"/Users/david/scm/stocksystem/play/app/models/ProductType.scala",
-		"/Users/david/scm/stocksystem/play/app/models/ProductVarient.scala",
-		"/Users/david/scm/stocksystem/play/app/models/Role.scala",
-		"/Users/david/scm/stocksystem/play/app/views/Location/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Location/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Location/show.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Login/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Page/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Page/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Page/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Product/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Product/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Product/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Product/show.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/ProductVarient/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/ProductVarient/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/ProductVarient/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/ProductVarient/show.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Role/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Role/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Role/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Role/show.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/main.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Application/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/models/Category.scala",
-		"/Users/david/scm/stocksystem/play/app/views/CategoryMember/show.scala.html",
-		"/Users/david/scm/stocksystem/play/app/controllers/Admin.scala",
-		"/Users/david/scm/stocksystem/play/app/views/CategoryMember/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/CategoryMember/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/CategoryMember/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Category/show.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Category/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Category/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/Category/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/controllers/ReadOnly.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/CurrentUser.scala",
-		"/Users/david/scm/mashups/play/v2template/app/controllers/Application.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/CreateOnly.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/SysAdmin.scala",
-		"/Users/david/scm/stocksystem/play/app/controllers/Visible.scala",
-		"/Users/david/scm/stocksystem/play/app/views/ApplicationSetting/edit.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/ApplicationSetting/form.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/ApplicationSetting/index.scala.html",
-		"/Users/david/scm/stocksystem/play/app/views/ApplicationSetting/show.scala.html",
-		"/Users/david/scm/stocksystem/play/app/controllers/Secure.scala",
-		"/Users/david/scm/stocksystem/play/conf/application.conf",
-		"/Users/david/scm/mashups/play/v2template/conf/routes",
-		"/Users/david/scm/mashups/play/v2template/project/Build.scala",
-		"/Users/david/scm/stocksystem/play/project/plugins.sbt",
-		"/Users/david/scm/stocksystem/play/project/Build.scala",
-		"/Users/david/scm/stocksystem/.gitignore",
-		"/Users/david/scm/stocksystem/play/conf/dependencies.yml",
-		"/Users/david/scm/mashups/play/v2template/app/controllers/Local.scala",
-		"/Users/david/scm/mashups/play/v2template/app/views/route.scala.html",
-		"/Users/david/scm/mashups/play/v2template/app/controllers/Route.scala",
-		"/Users/david/scm/mashups/play/version2/project/Build.scala",
-		"/Users/david/scm/mashups/play/v2template/app/controllers/Fake.scala",
-		"/Users/david/scm/mashups/haskell/baby.hs",
-		"/Users/david/scm/mashups/stack/src/test/scala/cucumber/examples/scalacalculator/RpnCalculatorStepDefinitions.scala",
-		"/Users/david/scm/mashups/stack/src/test/resources/cucumber/examples/scalacalculator/basic_arithmetic.feature",
-		"/Users/david/scm/external/cucumber-jvm/examples/java-helloworld/src/test/java/cucumber/examples/java/helloworld/RunCukesTest.java",
-		"/Users/david/scm/external/cucumber-jvm/examples/scala-calculator/src/test/scala/cucumber/examples/scalacalculator/RunCukesTest.scala",
-		"/Users/david/scm/external/cucumber-jvm/scala/src/test/scala/cucumber/runtime/RunCukesTest.scala",
-		"/Users/david/scm/mashups/stack/project/Build.scala",
-		"/Users/david/scm/mashups/stack/build.sbt",
-		"/Users/david/scm/mashups/stack/src/test/scala/cucumber/examples/scalacalculator/RunCukesTest.scala",
-		"/Users/david/scm/mashups/stack/src/test/scala/cucumber/examples/scalacalculator/RunCukesTest.java",
-		"/Users/david/scm/mashups/cucumber/calculator/features/adding.feature",
-		"/Users/david/scm/mashups/cucumber/calculator/features/step_definitions/calculator_steps.rb",
-		"/Users/david/scm/mashups/play/version2/project/plugins.sbt",
-		"/Users/david/scm/mashups/play/version2/.gitignore",
-		"/Users/david/scm/external/cucumber-jvm/examples/java-helloworld/README.md",
-		"/Users/david/scm/external/cucumber-jvm/examples/scala-calculator/src/test/resources/cucumber/examples/scalacalculator/basic_arithmetic.feature"
->>>>>>> sublime project files
+		"/Users/David/Documents/scm/stocksystem/play/app/views/Tags/productphotos.scala.html"
 	],
 	"find":
 	{
@@ -472,18 +282,31 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-<<<<<<< HEAD
+			"routes.FileManager.create",
+			"controllers.FileManager.create",
+			"/filemanager",
+			"restfb",
+			"findManyBy",
+			"$set",
+			"foldleft",
+			"redirect",
+			"isuserlog",
+			"=\"@",
+			"temp.jpg",
+			"$set",
+			"metadata",
+			"registerjoda",
+			"getFile",
+			"moveImageType",
+			"moveImages",
+			"@",
+			"getWierdTemplateScript",
+			"gridfs",
+			"tempFile",
 			"Logger.info",
 			"foldLeft(",
 			"foldLeft",
 			"finding many query",
-=======
-			"sha1",
-			"Session",
-			">",
-			"hibernate",
-			"net.liftweb",
->>>>>>> sublime project files
 			"coursetypelist",
 			"Sorting",
 			"selected",
@@ -536,54 +359,31 @@
 	"groups":
 	[
 		{
-<<<<<<< HEAD
-			"selected": 2,
-=======
-			"selected": 3,
->>>>>>> sublime project files
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-<<<<<<< HEAD
-					"file": "/Users/david/scm/mashups/stack/build.sbt",
+					"file": "/Users/David/scm/stack/test/resources/fundamental.feature",
 					"settings":
 					{
-						"buffer_size": 424,
-=======
-					"file": "/Users/david/scm/stocksystem/play/app/controllers/Location.scala",
-					"settings":
-					{
-						"buffer_size": 2199,
->>>>>>> sublime project files
+						"buffer_size": 656,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-<<<<<<< HEAD
-								411,
-								411
-=======
-								2126,
-								2126
->>>>>>> sublime project files
+								647,
+								647
 							]
 						],
 						"settings":
 						{
-<<<<<<< HEAD
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4
 						},
 						"translation.x": 0.0,
-=======
-							"syntax": "Packages/Scala/Scala.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 1.0,
->>>>>>> sublime project files
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -591,109 +391,24 @@
 				},
 				{
 					"buffer": 1,
-<<<<<<< HEAD
-					"file": "/Users/david/scm/mashups/stack/src/test/scala/cucumber/examples/scalacalculator/RunCukesTest.scala",
+					"file": "/Users/David/scm/stack/test/scala/fundamentalStepDefinitions.scala",
 					"settings":
 					{
-						"buffer_size": 189,
-=======
-					"file": "/Users/david/scm/stocksystem/play/app/controllers/CategoryMember.scala",
-					"settings":
-					{
-						"buffer_size": 4171,
->>>>>>> sublime project files
+						"buffer_size": 1034,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-<<<<<<< HEAD
-								131,
-								131
-=======
-								2224,
-								2224
->>>>>>> sublime project files
-							]
-						],
-						"settings":
-						{
-<<<<<<< HEAD
-							"syntax": "Packages/Scala/Scala.tmLanguage"
-						},
-						"translation.x": 0.0,
-=======
-							"syntax": "Packages/Scala/Scala.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 1.0,
->>>>>>> sublime project files
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-<<<<<<< HEAD
-					"file": "/Users/david/scm/mashups/stack/src/test/resources/cucumber/examples/scalacalculator/basic_arithmetic.feature",
-					"settings":
-					{
-						"buffer_size": 163,
-=======
-					"file": "/Users/david/scm/stocksystem/play/app/controllers/Category.scala",
-					"settings":
-					{
-						"buffer_size": 2800,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1617,
-								1617
+								1030,
+								1030
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Scala/Scala.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 448.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "stack/build.sbt",
-					"settings":
-					{
-						"buffer_size": 424,
->>>>>>> sublime project files
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-<<<<<<< HEAD
-								162,
-								162
-=======
-								411,
-								411
->>>>>>> sublime project files
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -701,16 +416,6 @@
 					},
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -720,11 +425,7 @@
 	},
 	"input":
 	{
-<<<<<<< HEAD
 		"height": 29.0
-=======
-		"height": 31.0
->>>>>>> sublime project files
 	},
 	"layout":
 	{
@@ -735,18 +436,6 @@
 				0,
 				1,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
-			],
-			[
-				0,
-				2,
-				1,
-				3
 			]
 		],
 		"cols":
@@ -757,13 +446,6 @@
 		"rows":
 		[
 			0.0,
-<<<<<<< HEAD
-			0.339387686062,
-			0.704697225981,
-=======
-			0.507363607029,
-			0.66,
->>>>>>> sublime project files
 			1.0
 		]
 	},
@@ -786,6 +468,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/Users/David/Documents/scm/stocksystem/stocksystem.sublime-project"
+			]
 		],
 		"width": 380.0
 	},
@@ -793,10 +479,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-<<<<<<< HEAD
 	"side_bar_width": 317.0,
-=======
-	"side_bar_width": 472.0,
->>>>>>> sublime project files
 	"status_bar_visible": true
 }
