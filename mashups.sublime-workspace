@@ -12,18 +12,32 @@
 	"buffers":
 	[
 		{
-			"file": "/Users/David/scm/stack/test/resources/fundamental.feature",
+			"contents": "package models\n\nimport com.novus.salat._\nimport com.novus.salat.global._\nimport com.novus.salat.annotations._\nimport com.novus.salat.dao._\nimport com.mongodb.casbah.Imports._\nimport com.mongodb.casbah.MongoConnection\n\ncase class Route(@Key(\"_id\") id: ObjectId, name: String, domain: String)\n\ncase class Site(@Key(\"_id\") id: ObjectId, name: String, domain: String, routes: scala.collection.Seq[Route])\n\nobject SiteDAO extends SalatDAO[Site, Int](collection = MongoDB.getDB(\"Sites\")) {\n  //define a method for determinig a route fr\n}",
+			"file": "/Users/David/scm/stack/app/models/Site.scala",
+			"file_size": 370,
+			"file_write_time": 1336237319000000,
 			"settings":
 			{
-				"buffer_size": 656,
+				"buffer_size": 531,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/David/scm/stack/test/scala/fundamentalStepDefinitions.scala",
+			"contents": "package models\n\nimport com.novus.salat._\nimport com.novus.salat.global._\nimport com.novus.salat.annotations._\nimport com.novus.salat.dao._\nimport com.mongodb.casbah.Imports._\nimport com.mongodb.casbah.MongoConnection\n\n",
+			"file": "/Users/David/scm/stack/app/models/Route.scala",
+			"file_size": 290,
+			"file_write_time": 1336237514000000,
 			"settings":
 			{
-				"buffer_size": 1034,
+				"buffer_size": 218,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/David/scm/stack/project/plugins.sbt",
+			"settings":
+			{
+				"buffer_size": 377,
 				"line_ending": "Unix"
 			}
 		}
@@ -136,6 +150,10 @@
 	},
 	"file_history":
 	[
+		"/Users/David/scm/stack/test/resources/fundamental.feature",
+		"/Users/David/scm/stack/test/scala/fundamentalStepDefinitions.scala",
+		"/Users/David/Downloads/Default.aspx.cs",
+		"/Users/David/scm/stack/app/controllers/Problem.scala",
 		"/Users/David/scm/stack/.gitignore",
 		"/Users/David/scm/mashups/play/v2template/app/models/Global.scala",
 		"/Users/David/scm/mashups/stack/test/scala/fundamentalStepDefinitions.scala",
@@ -259,11 +277,7 @@
 		"/Users/David/Documents/scm/stocksystem/play/app/views/Product/index.scala.html",
 		"/Users/David/Documents/scm/stocksystem/play/public/stylesheets/seasoned.css",
 		"/Users/David/Documents/scm/stocksystem/play/app/views/Tags/overviewBase.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Category/show.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/CategoryMember/index.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/ProductVarient/index.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Category/index.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Tags/productphotos.scala.html"
+		"/Users/David/Documents/scm/stocksystem/play/app/views/Category/show.scala.html"
 	],
 	"find":
 	{
@@ -359,29 +373,27 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/David/scm/stack/test/resources/fundamental.feature",
+					"file": "/Users/David/scm/stack/app/models/Site.scala",
 					"settings":
 					{
-						"buffer_size": 656,
+						"buffer_size": 531,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								647,
-								647
+								261,
+								265
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4
+							"syntax": "Packages/Scala/Scala.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -391,24 +403,49 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/David/scm/stack/test/scala/fundamentalStepDefinitions.scala",
+					"file": "/Users/David/scm/stack/app/models/Route.scala",
 					"settings":
 					{
-						"buffer_size": 1034,
+						"buffer_size": 218,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1030,
-								1030
+								218,
+								218
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Scala/Scala.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Scala/Scala.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/David/scm/stack/project/plugins.sbt",
+					"settings":
+					{
+						"buffer_size": 377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

@@ -1,0 +1,94 @@
+body {
+  background-color:#dddddd;
+}
+
+header {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width:70%;
+}
+
+header h1 {
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+header p {
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#canvas {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  -webkit-box-shadow:0 0 5px #888;
+}
+
+#canvas.empty {
+  width:70%;
+  height:25%;
+}
+
+#tools {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 0.75em;
+  width:70%;
+}
+
+#loadfile {
+  display:none;
+  width:70%;
+}
+
+#upload {
+}
+
+#save {
+}
+
+#filterdiv {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0.75em;
+  width:70%;
+}
+
+#customdiv {
+  display:none;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 0.25em;
+  width:70%;
+}
+
+#matrix {
+  margin-left: 3%;
+}
+
+#filter {
+}
+
+#apply {
+}
+
+#undo {
+  display:none;
+}
+
+#saveframe {
+  display:none;
+  -webkit-box-shadow:0 0 100px #444;
+  background-color:#eeeeee;
+
+  z-index: 2;
+  position:fixed;
+  top: 10%;
+  right: 10%;
+}

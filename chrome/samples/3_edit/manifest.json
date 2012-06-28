@@ -1,0 +1,29 @@
+{
+  "name": "Filtamatic Image Editor",
+  "version": "2",
+  "manifest_version": 2,
+  "web_accessible_resources": [
+    "save.html"
+  ],
+  "icons": { "16": "filtamatic16.png",
+             "128": "filtamatic128.png" },
+  "app": {
+    "launch": {
+      "local_path": "index.html"
+    }
+  },
+  "intents": {
+    "http://webintents.org/save": {
+      "type": ["image/jpg", "image/jpeg", "image/png", "image/gif"],
+      "title": "Filtamatic Save",
+      "path": "save.html",
+      "disposition": "inline"
+    },
+    "http://webintents.org/edit" : {
+      "type": ["image/jpg", "image/jpeg", "image/png", "image/gif"],
+      "title": "Filtamatic Image Editor",
+      "path": "edit.html",
+      "disposition": "window"
+    }
+  }
+}

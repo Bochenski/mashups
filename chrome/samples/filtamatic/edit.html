@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Filtamatic</title>
+<link rel="stylesheet" href="index.css">
+<script src="jquery.js"></script>
+<script src="filters.js"></script>
+<script src="index.js"></script>
+<script src="edit.js"></script>
+</head>
+<body>
+  <header>
+  <h1>Filtamatic</h1>
+  <p>For the images you love most</p>
+  </header>
+  <div id="tools">
+    <button id="save">Done Editing</button>
+  </div>
+  <canvas class="empty" id="canvas"></canvas>
+  <div id="filterdiv">
+    <select id="filter">
+      <option>Select a filter ...</option>
+      <option id="grayscale">Grayscale</option>
+      <option id="sepia">Sepia</option>
+      <option id="brighten">Brighten</option>
+      <option id="sharpen">Sharpen</option>
+      <option id="noise">Add noise</option>
+      <option id="blur">Blur</option>
+      <option id="threshold">Threshold</option>
+      <option id="sobel">Sobel (find edges)</option>
+      <option id="custom">Custom</option>
+    </select>
+    <button id="apply">Apply</button>
+    <button id="undo">Undo</button>
+  </div>
+  <div id="customdiv">
+    <div id="matrix">
+      <input type="text" size="3" value="1">
+      <input type="text" size="3" value="1">
+      <input type="text" size="3" value="1">
+      <br>
+      <input type="text" size="3" value="1">
+      <input type="text" size="3" value="0.7">
+      <input type="text" size="3" value="1">
+      <br>
+      <input type="text" size="3" value="-1">
+      <input type="text" size="3" value="-1">
+      <input type="text" size="3" value="-1">
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "PicStore",
+  "icons": { "128": "picstore128.png",
+             "16": "picstore16.png"
+           },
+  "version": "2",
+  "manifest_version": 2,
+  "app": {
+    "launch": {
+      "local_path": "index.html"
+    }
+  },
+  "permissions": [
+    "unlimitedStorage"
+  ],
+  "intents": {
+    "http://webintents.org/save" : {
+      "type": ["image/jpg", "image/jpeg", "image/png", "image/gif"],
+      "title": "PicStore",
+      "path": "save.html",
+      "disposition": "inline"
+    },
+    "http://webintents.org/pick" : {
+      "type": ["image/jpg", "image/png", "image/gif"],
+      "title": "PicStore",
+      "path": "pick.html",
+      "disposition": "inline"
+    }
+  }
+}
