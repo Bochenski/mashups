@@ -66,6 +66,37 @@ var fileError = function(e) {
   $('#fileselect').detach();
 };
 
+var pick = function() {
+  console.log('Picking an image with web intents');
+
+  var intent = new WebKitIntent(
+    { "action":"http://webintents.org/pick",
+      "type":"image/*"
+    });
+
+  navigator.webkitStartActivity(intent, onSuccess, onError);
+};
+
+var onSuccess = function(data) {
+  var imageURL;
+  if (data instanceof Blob) {
+    imageURL = webkitURL.createObjectURL(data);
+  } else {
+    imageURL = data;
+  }
+
+  loadImageFromUrl(imageURL);
+};
+
+var onError = function() {
+  console.log("Error picking file with intents");
+};
+
+var fileError = function(e) {
+  console.log("Error reading file");
+  $('#fileselect').detach();
+};
+
 // Let the user save the image. Should bring up an iframe with the
 // contents of the canvas and tell the user to right-click and save-image-as.
 var save = function() {
@@ -136,6 +167,7 @@ var filterChange = function() {
 
 var loaded = function() {
   $('#upload').click(upload);
+  $('#pick').click(pick);
   $('#save').click(save);
   $('#apply').click(applyFilter);
   $('#undo').click(undo);
