@@ -108,6 +108,18 @@ var save = function() {
   $('#saveframe').show();
 };
 
+var saveIntent = function() {
+  var dataURL = document.getElementById('canvas').toDataURL('image/jpeg');
+
+  var saveService = "chrome-extension://cnomncoclobnnlnjaagoaanfhddfodhk/save.html";
+
+  navigator.webkitStartActivity(new WebKitIntent(
+    {"action":"http://webintents.org/save",
+    "type":"image/jpeg",
+    "data":dataURL,
+    "service":saveService}));
+};
+
 var closeSave = function() {
   $('#saveframe').hide();
 };
@@ -168,7 +180,7 @@ var filterChange = function() {
 var loaded = function() {
   $('#upload').click(upload);
   $('#pick').click(pick);
-  $('#save').click(save);
+  $('#save').click(saveIntent);
   $('#apply').click(applyFilter);
   $('#undo').click(undo);
   $('#filter').change(filterChange);

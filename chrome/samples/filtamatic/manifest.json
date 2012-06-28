@@ -11,5 +11,13 @@
     "launch": {
       "local_path": "index.html"
     }
+  },
+  "intents": {
+    "http://webintents.org/save": {
+      "type": ["image/jpg", "image/jpeg", "image/png", "image/gif"],
+      "title": "Filtamatic Save",
+      "path": "save.html",
+      "disposition": "inline"
+    }
   }
 }

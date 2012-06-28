@@ -1,9 +1,10 @@
 var loaded = function() {
-  $('#close').click(closeSave);
 
-  // TODO: add code here to get the URL of the image from the incoming intent.
-  // and set the #image src attribute for the save preview.
-  // var imageURL = ???
+  var imageURL = window.webkitIntent.data;
+  console.log("Saving " + imageURL);
+  $('#image').attr("src", imageURL);
+
+  $('#close').click(closeSave);
 };
 
 var closeSave = function() {
