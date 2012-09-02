@@ -1,0 +1,9 @@
+p There are {{books.length}} books
+div(ng-repeat='book in books')
+	h3 {{book.title}}
+	div {{book.chapters}}
+	a(href='readBook/{{book.id}}') More
+	| -
+	a(href='editBook/{{book.id}}') Edit
+	| -
+	a(href='deleteBook/{{book.id}}') Delete

@@ -1,0 +1,7 @@
+h2 {{ book.title }}
+div {{ book.chapters }}
+p 
+	| Are you sure you want to delete this book?
+	button(ng-click='deleteBook()') Yes
+	| -
+	button(ng-click='home()') No thanks

@@ -38,7 +38,12 @@ app.get('/partials/:name', routes.partials);
 
 // JSON API
 
-app.get('/api/name', api.name);
+app.get('/api/books', api.books);
+
+app.get('/api/book/:id', api.book);
+app.post('/api/book', api.addBook);
+app.put('/api/book/:id', api.editBook);
+app.delete('/api/book/:id', api.deleteBook);
 
 // redirect all others to the index (HTML5 history)
 app.get('*', routes.index);
