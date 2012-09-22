@@ -22,12 +22,25 @@ p = zeros(size(X, 1), 1);
 %
 
 
+% Add ones to the X data matrix
+X = [ones(m, 1) X];
 
+% calculate z of row 2 by multiplying by Theta1 transpose 
+Z2 = X * Theta1';
 
+% calculate sigmoid elementwise
+A2 = sigmoid(Z2);
 
+% Add ones to the A2 data matrix
+n = size(A2,1);
+A2 = [ones(n,1) A2];
 
+% forward propagate to the next level
+Z3 = A2 * Theta2';
+A3 = sigmoid(Z3);
 
-
+%finally work out the maximum and return its index
+[z,p] = max(A3, [] , 2);
 
 % =========================================================================
 

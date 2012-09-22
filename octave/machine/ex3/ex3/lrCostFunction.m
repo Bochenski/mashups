@@ -36,14 +36,15 @@ grad = zeros(size(theta));
 %           grad = grad + YOUR_CODE_HERE (using the temp variable)
 %
 
+regulizer = theta * ((lambda / m));
 
+regulizer(1,1) = 0;
 
+partialCost = (-y' * log(sigmoid(X * theta))) - ( (1-y)' * log(1 - sigmoid(X * theta)) );
 
+J = (partialCost / m) + (regulizer / 2)' * theta ;
 
-
-
-
-
+grad = (((sigmoid(X * theta) - y)' * X ) / m)' + regulizer;
 
 % =============================================================
 

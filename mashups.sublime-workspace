@@ -12,32 +12,34 @@
 	"buffers":
 	[
 		{
-			"contents": "package models\n\nimport com.novus.salat._\nimport com.novus.salat.global._\nimport com.novus.salat.annotations._\nimport com.novus.salat.dao._\nimport com.mongodb.casbah.Imports._\nimport com.mongodb.casbah.MongoConnection\n\ncase class Route(@Key(\"_id\") id: ObjectId, name: String, domain: String)\n\ncase class Site(@Key(\"_id\") id: ObjectId, name: String, domain: String, routes: scala.collection.Seq[Route])\n\nobject SiteDAO extends SalatDAO[Site, Int](collection = MongoDB.getDB(\"Sites\")) {\n  //define a method for determinig a route fr\n}",
-			"file": "/Users/David/scm/stack/app/models/Site.scala",
-			"file_size": 370,
-			"file_write_time": 1336237319000000,
+			"file": "octave/machine/ex3/ex3/lrCostFunction.m",
 			"settings":
 			{
-				"buffer_size": 531,
+				"buffer_size": 1951,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "package models\n\nimport com.novus.salat._\nimport com.novus.salat.global._\nimport com.novus.salat.annotations._\nimport com.novus.salat.dao._\nimport com.mongodb.casbah.Imports._\nimport com.mongodb.casbah.MongoConnection\n\n",
-			"file": "/Users/David/scm/stack/app/models/Route.scala",
-			"file_size": 290,
-			"file_write_time": 1336237514000000,
+			"file": "octave/machine/ex3/ex3/oneVsAll.m",
 			"settings":
 			{
-				"buffer_size": 218,
+				"buffer_size": 2197,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Users/David/scm/stack/project/plugins.sbt",
+			"file": "octave/machine/ex3/ex3/predictOneVsAll.m",
 			"settings":
 			{
-				"buffer_size": 377,
+				"buffer_size": 1505,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "octave/machine/ex3/ex3/predict.m",
+			"settings":
+			{
+				"buffer_size": 1433,
 				"line_ending": "Unix"
 			}
 		}
@@ -150,6 +152,10 @@
 	},
 	"file_history":
 	[
+		"/Users/David/scm/mashups/node/chapter/README.md",
+		"/Users/David/scm/stack/project/plugins.sbt",
+		"/Users/David/scm/stack/app/models/Route.scala",
+		"/Users/David/scm/stack/app/models/Site.scala",
 		"/Users/David/scm/stack/test/resources/fundamental.feature",
 		"/Users/David/scm/stack/test/scala/fundamentalStepDefinitions.scala",
 		"/Users/David/Downloads/Default.aspx.cs",
@@ -273,11 +279,7 @@
 		"/Users/David/Documents/scm/stocksystem/play/app/views/Product/edit.scala.html",
 		"/Users/David/Documents/scm/stocksystem/play/app/models/OrderLine.scala",
 		"/Users/David/Documents/scm/stocksystem/play/app/models/Order.scala",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/CategoryMember/show.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Product/index.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/public/stylesheets/seasoned.css",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Tags/overviewBase.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Category/show.scala.html"
+		"/Users/David/Documents/scm/stocksystem/play/app/views/CategoryMember/show.scala.html"
 	],
 	"find":
 	{
@@ -373,27 +375,28 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/Users/David/scm/stack/app/models/Site.scala",
+					"file": "octave/machine/ex3/ex3/lrCostFunction.m",
 					"settings":
 					{
-						"buffer_size": 531,
+						"buffer_size": 1951,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								261,
-								265
+								1682,
+								1682
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Scala/Scala.tmLanguage"
+							"syntax": "Packages/Objective-C/Objective-C.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -403,23 +406,49 @@
 				},
 				{
 					"buffer": 1,
-					"file": "/Users/David/scm/stack/app/models/Route.scala",
+					"file": "octave/machine/ex3/ex3/oneVsAll.m",
 					"settings":
 					{
-						"buffer_size": 218,
+						"buffer_size": 2197,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								218,
-								218
+								1886,
+								1886
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Scala/Scala.tmLanguage"
+							"syntax": "Packages/Objective-C/Objective-C.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "octave/machine/ex3/ex3/predictOneVsAll.m",
+					"settings":
+					{
+						"buffer_size": 1505,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1421,
+								1383
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -428,24 +457,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/Users/David/scm/stack/project/plugins.sbt",
+					"buffer": 3,
+					"file": "octave/machine/ex3/ex3/predict.m",
 					"settings":
 					{
-						"buffer_size": 377,
+						"buffer_size": 1433,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1235,
+								1235
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Objective-C/Objective-C.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
