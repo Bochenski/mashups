@@ -7,49 +7,65 @@ var express = require('express'),
   routes = require('./routes'),
   api = require('./routes/api');
 
-var app = module.exports = express.createServer();
+var DEFAULT_HTTP_LISTEN_PORT = 9797;
 
-// Configuration
+var App = function App(options) {
+  var self = this;
+  options        = options || {};
+  self.port      = options['port'] || DEFAULT_HTTP_LISTEN_PORT;
+  self.logStream = options['logStream'] || process.stdout;
 
-app.configure(function(){
-  app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
-  app.set('view options', {
-    layout: false
+  var server = this.server = express.createServer();
+  // Configuration
+
+  server.configure(function(){
+    server.set('views', __dirname + '/views');
+    server.set('view engine', 'jade');
+    server.set('view options', {
+      layout: false
+    });
+    server.use(express.logger({format: 'dev', stream: self.logStream}));
+    server.use(express.bodyParser());
+    server.use(express.methodOverride());
+    server.use(express.static(__dirname + '/public'));
+    server.use(server.router);
   });
-  app.use(express.bodyParser());
-  app.use(express.methodOverride());
-  app.use(express.static(__dirname + '/public'));
-  app.use(app.router);
-});
 
-app.configure('development', function(){
-  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-});
+  server.configure('development', function(){
+    server.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+  });
 
-app.configure('production', function(){
-  app.use(express.errorHandler());
-});
+  server.configure('production', function(){
+    server.use(express.errorHandler());
+  });
 
-// Routes
+  // Routes
 
-app.get('/', routes.index);
-app.get('/partials/:name', routes.partials);
+  server.get('/', routes.index);
+  server.get('/partials/:name', routes.partials);
 
-// JSON API
+  // JSON API
 
-app.get('/api/books', api.books);
+  server.get('/api/books', api.books);
 
-app.get('/api/book/:id', api.book);
-app.post('/api/book', api.addBook);
-app.put('/api/book/:id', api.editBook);
-app.delete('/api/book/:id', api.deleteBook);
+  server.get('/api/book/:id', api.book);
+  server.post('/api/book', api.addBook);
+  server.put('/api/book/:id', api.editBook);
+  server.delete('/api/book/:id', api.deleteBook);
 
-// redirect all others to the index (HTML5 history)
-app.get('*', routes.index);
+  // redirect all others to the index (HTML5 history)
+  // server.get('*', routes.index);
 
-// Start server
+}
 
-app.listen(3000, function(){
-  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
-});
+App.prototype.start = function start() {
+  this.server.listen(this.port);
+  this.baseUrl = "http://localhost:" + this.port;
+  console.log("Listening on port " + this.port);
+};
+
+App.prototype.stop = function stop() {
+  this.server.close();
+};
+
+module.exports = App;
