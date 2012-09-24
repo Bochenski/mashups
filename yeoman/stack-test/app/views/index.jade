@@ -1,0 +1,24 @@
+extends layout
+
+block body
+  div(ng-controller='AppCtrl')
+    label I did this alot more than I thought possible to do well at least it is working now but the polling is stupidly slow
+    h2 Hello {{name}}
+    ul.menu
+      li
+        a(href='view1') view1
+      li
+        a(href='view2') view2
+
+    div(ng-view)
+
+    div
+      | Angular seed app: v
+      span(app-version)
+
+  script(src='js/lib/angular/angular.js')
+  script(src='js/app.js')
+  script(src='js/services.js')
+  script(src='js/controllers.js')
+  script(src='js/filters.js')
+  script(src='js/directives.js')
