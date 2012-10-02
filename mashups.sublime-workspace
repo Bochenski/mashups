@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"regulari",
+				"regularizationPart"
+			],
+			[
 				"edi",
 				"editProductAction"
 			]
@@ -11,54 +15,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/David/scm/external/generators/lib/generators/stack/templates/app/Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 4688,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "yeoman/yeoman-test/app/index.html",
-			"settings":
-			{
-				"buffer_size": 1810,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "yeoman/stack-test/app/views/index.jade",
-			"settings":
-			{
-				"buffer_size": 572,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "yeoman/stack-test/app/routes/index.js",
-			"settings":
-			{
-				"buffer_size": 197,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "yeoman/stack-test/app/app.js",
-			"settings":
-			{
-				"buffer_size": 1232,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/David/scm/external/generators/lib/generators/stack/templates/app/package.json",
-			"settings":
-			{
-				"buffer_size": 154,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/User/yeoman.sublime-build",
 	"command_palette":
@@ -168,8 +124,19 @@
 	},
 	"file_history":
 	[
-		"/Users/David/scm/mashups/yeoman/stack-test/Gruntfile.js",
+		"/Users/David/scm/mashups/octave/machine/ex4/ex4/ex4.m",
+		"/Users/David/scm/mashups/octave/machine/ex4/ex4/nnCostFunction.m",
+		"/Users/David/scm/mashups/octave/machine/ex3/ex3/oneVsAll.m",
+		"/Users/David/scm/mashups/octave/machine/ex4/ex4/sigmoidGradient.m",
+		"/Users/David/scm/mashups/octave/machine/ex4/ex4/randInitializeWeights.m",
+		"/Users/David/scm/external/generators/lib/generators/stack/templates/app/package.json",
+		"/Users/David/scm/mashups/yeoman/stack-test/app/app.js",
+		"/Users/David/scm/mashups/yeoman/stack-test/app/routes/index.js",
+		"/Users/David/scm/mashups/yeoman/stack-test/app/views/index.jade",
+		"/Users/David/scm/mashups/yeoman/yeoman-test/app/index.html",
 		"/Users/David/scm/external/generators/lib/generators/stack/templates/app/Gruntfile.js",
+		"/Users/David/scm/mashups/octave/machine/ex4/ex4.pdf",
+		"/Users/David/scm/mashups/yeoman/stack-test/Gruntfile.js",
 		"/Users/David/scm/external/generators/lib/generators/stack/all/index.js",
 		"/Users/David/scm/external/generators/lib/generators/stack/app/index.js",
 		"/Users/David/scm/external/generators/lib/generators/angular/util.js",
@@ -177,7 +144,6 @@
 		"/Users/David/scm/external/generators/lib/generators/angular/app/index.js",
 		"/Users/David/scm/mashups/octave/machine/ex3/ex3/predict.m",
 		"/Users/David/scm/mashups/octave/machine/ex3/ex3/predictOneVsAll.m",
-		"/Users/David/scm/mashups/octave/machine/ex3/ex3/oneVsAll.m",
 		"/Users/David/scm/mashups/octave/machine/ex3/ex3/lrCostFunction.m",
 		"/Users/David/scm/mashups/yeoman/generator-test/lib/generators/stack/index.js",
 		"/Users/David/scm/mashups/yeoman/generator2/lib/generators/stack/index.js",
@@ -285,17 +251,7 @@
 		"/Users/David/Documents/scm/stocksystem/play/app/views/CategoryMember/edit.scala.html",
 		"/Users/David/Documents/scm/stocksystem/play/app/views/DayCourseDate/show.scala.html",
 		"/Users/David/Documents/scm/stocksystem/play/app/views/Location/show.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/controllers/ProductVarient.scala",
-		"/Users/David/Documents/scm/stocksystem/play/app/models/Location.scala",
-		"/Users/David/Documents/scm/stocksystem/play/app/controllers/Product.scala",
-		"/Users/David/Documents/scm/stocksystem/play/app/controllers/CategoryMember.scala",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Location/index.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/Location/form.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/DayCourse/edit.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/DayCourse/form.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/controllers/Images.scala",
-		"/Users/David/Documents/scm/stocksystem/play/app/views/DayCourseDate/form.scala.html",
-		"/Users/David/Documents/scm/stocksystem/play/app/controllers/Page.scala"
+		"/Users/David/Documents/scm/stocksystem/play/app/controllers/ProductVarient.scala"
 	],
 	"find":
 	{
@@ -391,179 +347,8 @@
 	"groups":
 	[
 		{
-			"selected": 4,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/David/scm/external/generators/lib/generators/stack/templates/app/Gruntfile.js",
-					"settings":
-					{
-						"buffer_size": 4688,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4582,
-								4582
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "yeoman/yeoman-test/app/index.html",
-					"settings":
-					{
-						"buffer_size": 1810,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								639,
-								639
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "yeoman/stack-test/app/views/index.jade",
-					"settings":
-					{
-						"buffer_size": 572,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								183,
-								183
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "yeoman/stack-test/app/routes/index.js",
-					"settings":
-					{
-						"buffer_size": 197,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								82,
-								82
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "yeoman/stack-test/app/app.js",
-					"settings":
-					{
-						"buffer_size": 1232,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1159,
-								1159
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 5,
-					"file": "/Users/David/scm/external/generators/lib/generators/stack/templates/app/package.json",
-					"settings":
-					{
-						"buffer_size": 154,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								154,
-								154
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -584,18 +369,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
