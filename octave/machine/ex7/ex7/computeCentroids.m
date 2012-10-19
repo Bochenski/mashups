@@ -27,8 +27,16 @@ centroids = zeros(K, n);
 %
 
 
-
-
+for k = 1 : K
+  numberInCluster = 0;
+  for x = 1 : m 
+    if idx(x) == k
+      numberInCluster +=1;
+      centroids(k, :) = centroids(k, :) + X(x, :);
+    end  
+  end
+  centroids(k, :) = centroids(k, :) / numberInCluster;
+end
 
 
 

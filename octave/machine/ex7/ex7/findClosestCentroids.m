@@ -21,11 +21,16 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
-
-
-
-
-
+for x = 1 : size(X,1)
+  bestDistance = 1000000;
+  for k = 1 : K
+    normDistance = norm(X(x,:) - centroids(k,:))^2;
+    if normDistance < bestDistance
+      idx(x) = k;
+      bestDistance = normDistance;
+    end
+  end
+end
 
 % =============================================================
 
