@@ -37,3 +37,7 @@ octave/machine/ex6/ex6/ml_login_data.mat
 *.sublime-workspace
 
 mashups.sublime-workspace
+
+D/algorithms/inversions
+
+*.o
