@@ -33,3 +33,7 @@ mashups.sublime-project
 octave/machine/ex5/ex5/ml_login_data.mat
 
 octave/machine/ex6/ex6/ml_login_data.mat
+
+*.sublime-workspace
+
+mashups.sublime-workspace
