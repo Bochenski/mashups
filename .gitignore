@@ -41,3 +41,5 @@ mashups.sublime-workspace
 D/algorithms/inversions
 
 *.o
+
+python/coursera/bigdata/twitter/output.txt

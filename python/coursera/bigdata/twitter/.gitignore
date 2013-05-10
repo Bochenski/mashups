@@ -1,0 +1,5 @@
+bin/
+lib/
+include/
+output.json
+output.txt
