@@ -43,3 +43,5 @@ D/algorithms/inversions
 *.o
 
 python/coursera/bigdata/twitter/output.txt
+
+python/coursera/bigdata/twitter/AFINN-111.txt
