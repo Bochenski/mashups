@@ -2,10 +2,6 @@ import sys
 import json
 
 
-def lines(fp):
-    print str(len(fp.readlines()))
-
-
 def main():
     sent_file = open(sys.argv[1])
     tweet_file = open(sys.argv[2])
