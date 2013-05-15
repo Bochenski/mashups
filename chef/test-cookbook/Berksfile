@@ -1,0 +1,9 @@
+chef_api :config
+site :opscode
+
+metadata
+cookbook 'apt'
+cookbook 'nginx'
+cookbook 'build-essential'
+cookbook 'nodejs', site: :opscode
+cookbook 'mongodb', github: 'edelight/chef-mongodb'
